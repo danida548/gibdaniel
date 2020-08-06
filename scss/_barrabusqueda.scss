@@ -1,0 +1,54 @@
+@import "_generales.scss";
+
+.buscador{
+    padding: 3px;
+    margin: 30px;
+    &__titulo{
+        background: $fondo_degradado_light;
+        label{
+            display: block;
+            font-size: 1.4rem;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 6px;
+            color: $color-blanco;
+        }
+    }
+    .form{
+        padding: 12px 15px;
+        &__principal{
+            #search{
+                width: 90%;
+                height: 48px;
+                line-height: 48px;
+                @extend .light-box;
+                border: 1px solid #979797;
+                padding-left: 16px;
+                background: $color-blanco !important;
+                &::placeholder{
+                    color: #b4b4b4;
+                    font-size: 1.6px;
+                }
+            .search__button{
+                padding: 10px 10px 8px 10px;
+                line-height: 36px;
+                margin-left: 8px;
+                white-space: nowrap;
+                color: $color-gris;
+                border: 1px solid #808080; 
+                @extend .light-box
+            }        
+            img{
+                margin-right: 12px;
+                position: relative;
+                top: 2px;
+            }
+                
+                
+            }
+        }
+       
+            
+}
+
+}

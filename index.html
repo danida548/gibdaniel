@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normallize.css">
-    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/app.js" type="module" defer></script>
     <title></title>
 </head>
-
 <body>
     <header>
         <div class="superior">
@@ -22,17 +21,46 @@
                 <button class="crear-gifos boton-color">Crear Guifos</button>
                 <div class="seleccion">
                     <button class="botones-selector boton-color">Elegir Tema</button>
-                    <div class="flecha botones-selector">
+                    <div class="flecha botones-selector boton-color">
                         <img src="/img/dropdown.svg" alt="dropdown">
                     </div>
-                    <div class="temas">
-                        <button>Sailor Day</button>
-                        <button>Sailor Night</button>
+                    <div class="temas fondo-ventana">
+                        <button class="seccion">Sailor Day</button>
+                        <button class="seccion">Sailor Night</button>
                     </div>
                 </div>
                 <button class="mis-gifos">Mis GuifOS</button>
             </div>
+        </div>
+        <div class="buscador light-box">
+            <div class="buscador__titulo"> <label for="buscador">Buscar</label> </div>
+            <div class="form">
+                <div class="form__principal"> <input type="text" name="buscador" id="search" autocomplete="off"
+                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras..."> <a href="#"
+                        class="search__button"> <img src="./img/lupa_inactive.svg" alt="">Buscar </a>
+                     </div>
+            </div>
+        </div>
+        <div class="autocompletado light-box" id="autocompletado"> </div>
+        <div class="botonesSugerencias"> </div>
+
     </header>
+    <main>
+        <section class="sugerencias">
+            <div class="titulo">
+                <h3>Hoy Te Sugerimos</h3>
+            </div>
+            <div class="caja-targeta">
+            </div>
+        </section>
+        <section class="sugerencias">
+            <div class="titulo">
+                <h3>Tendencia</h3>
+            </div>
+            <div class="caja-targeta">
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
