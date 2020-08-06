@@ -19,9 +19,28 @@ header
     .cabecera
         @include flexbox
         height: 64px
-        margin-top: 16px
+        margin-top: 64px
         .botones
             @include flexbox
             .crear-gifos
+                padding: 9px 27px
+            .seleccion
+                display: flex
+                align-items: center
+                margin: 0 16px
+                button
+                    padding: 9px 24px
+                .flecha
+                    padding: 3px 16px 7px
+                    border-left: none    
+                .temas
+                    display: none
+            .mis-gifos
+                padding: 9px 20px 9px 1px
+                &:hover
+                    border: 1px dotted $color-light
+                &::first-letter
+                    border-bottom: 1px solid $color-light            
+
            
 
