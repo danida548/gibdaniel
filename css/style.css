@@ -98,7 +98,7 @@ button { border: none; outline: none; background: none; }
 
 .buscador .form { padding: 12px 15px; }
 
-.buscador .form__principal #search { width: 90%; height: 48px; line-height: 48px; border: 1px solid #979797; padding-left: 16px; background: #ffffff !important; }
+.buscador .form__principal #search { width: 90%; height: 48px; line-height: 48px; border: 1px solid #979797; padding-left: 16px; background: #ffffff !important; outline: none; }
 
 .buscador .form__principal #search::-webkit-input-placeholder { color: #b4b4b4; font-size: 1.6px; }
 
