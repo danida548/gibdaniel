@@ -20,7 +20,7 @@ button { border: none; outline: none; background: none; }
 
 .botones-selector { background: #f7c9f3; border: 1px solid #110038; -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; }
 
-.light-box, .buscador .form__principal #search, .buscador .form__principal #search .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
+.light-box, .buscador .form__principal #search, .buscador .form__principal .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
 
 html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; margin: 0; }
 
@@ -40,7 +40,7 @@ button { border: none; outline: none; background: none; }
 
 .botones-selector { background: #f7c9f3; border: 1px solid #110038; -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; }
 
-.light-box, .buscador .form__principal #search, .buscador .form__principal #search .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
+.light-box, .buscador .form__principal #search, .buscador .form__principal .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
 
 header .superior { background: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6)); background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); -webkit-box-shadow: 0 1px 0px 0px #110038; box-shadow: 0 1px 0px 0px #110038; height: 23px; line-height: 23px; position: absolute; top: 1px; right: 1px; bottom: 1px; left: 1px; }
 
@@ -88,7 +88,7 @@ button { border: none; outline: none; background: none; }
 
 .botones-selector { background: #f7c9f3; border: 1px solid #110038; -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; }
 
-.light-box, .buscador .form__principal #search, .buscador .form__principal #search .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
+.light-box, .buscador .form__principal #search, .buscador .form__principal .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
 
 .buscador { padding: 3px; margin: 30px; }
 
@@ -96,7 +96,7 @@ button { border: none; outline: none; background: none; }
 
 .buscador__titulo label { display: block; font-size: 1.4rem; height: 24px; line-height: 24px; padding: 0 6px; color: #ffffff; }
 
-.buscador .form { padding: 12px 15px; }
+.buscador .form { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 12px 15px; }
 
 .buscador .form__principal #search { width: 90%; height: 48px; line-height: 48px; border: 1px solid #979797; padding-left: 16px; background: #ffffff !important; outline: none; }
 
@@ -108,9 +108,9 @@ button { border: none; outline: none; background: none; }
 
 .buscador .form__principal #search::placeholder { color: #b4b4b4; font-size: 1.6px; }
 
-.buscador .form__principal #search .search__button { padding: 10px 10px 8px 10px; line-height: 36px; margin-left: 8px; white-space: nowrap; color: #b4b4b4; border: 1px solid #808080; }
+.buscador .form__principal .search__button { padding: 10px 10px 8px 10px; line-height: 36px; margin-left: 8px; white-space: nowrap; color: #b4b4b4; border: 1px solid #808080; }
 
-.buscador .form__principal #search img { margin-right: 12px; position: relative; top: 2px; }
+.buscador .form__principal .search__button img { margin-right: 12px; position: relative; top: 2px; }
 
 html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; margin: 0; }
 
@@ -130,7 +130,7 @@ button { border: none; outline: none; background: none; }
 
 .botones-selector { background: #f7c9f3; border: 1px solid #110038; -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff; }
 
-.light-box, .buscador .form__principal #search, .buscador .form__principal #search .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
+.light-box, .buscador .form__principal #search, .buscador .form__principal .search__button { background: #E6E6E6; -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff; }
 
 section { margin: 66px; }
 
@@ -138,7 +138,11 @@ section .titulo { background: white; border: 1px solid #e6bbe2; -webkit-box-shad
 
 section .titulo h3 { color: #110038; font-size: 1.4rem; font-weight: 400; margin-left: 7px; }
 
-section .caja_tarjeta { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); grid-gap: 20px; grid-auto-flow: row dense; }
+section .caja-tarjeta { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); grid-gap: 20px; grid-auto-flow: row dense; }
 
-section .caja_tarjeta .grande { -ms-grid-column-span: 2; grid-column-end: span 2; }
+section .caja-tarjeta .grande { -ms-grid-column-span: 2; grid-column-end: span 2; }
+
+section .caja-tarjeta .tarjeta { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 3px 3px 5px 3px; overflow: hidden; position: relative; }
+
+section .caja-tarjeta .gif { height: 290px; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; width: 100%; }
 /*# sourceMappingURL=style.css.map */

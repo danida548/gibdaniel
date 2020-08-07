@@ -14,7 +14,8 @@
             color: $color-blanco;
         }
     }
-    .form{
+    .form{ 
+        display: flex;     
         padding: 12px 15px;
         &__principal{
             #search{
@@ -30,6 +31,7 @@
                     color: #b4b4b4;
                     font-size: 1.6px;
                 }
+            }
             .search__button{
                 padding: 10px 10px 8px 10px;
                 line-height: 36px;
@@ -37,19 +39,19 @@
                 white-space: nowrap;
                 color: $color-gris;
                 border: 1px solid #808080; 
-                @extend .light-box
-            }        
-            img{
-                margin-right: 12px;
-                position: relative;
-                top: 2px;
+                @extend .light-box;
+                img{
+                    margin-right: 12px;
+                    position: relative;
+                    top: 2px;
+                }   
             }
-                
-                
-            }
-        }
-       
+        }            
+    }                
+}
+             
+        
+        
             
-}
 
-}
+
