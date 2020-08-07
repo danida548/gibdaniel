@@ -96,7 +96,9 @@ button { border: none; outline: none; background: none; }
 
 .buscador__titulo label { display: block; font-size: 1.4rem; height: 24px; line-height: 24px; padding: 0 6px; color: #ffffff; }
 
-.buscador .form { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 12px 15px; }
+.buscador .form { padding: 12px 15px; }
+
+.buscador .form__principal { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .buscador .form__principal #search { width: 90%; height: 48px; line-height: 48px; border: 1px solid #979797; padding-left: 16px; background: #ffffff !important; outline: none; }
 

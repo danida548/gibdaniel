@@ -15,9 +15,9 @@
         }
     }
     .form{ 
-        display: flex;     
         padding: 12px 15px;
         &__principal{
+            display: flex;
             #search{
                 width: 90%;
                 height: 48px;
