@@ -32,7 +32,7 @@ export class TENDENCIAS {
             tarjeta.className = "tarjeta";
             gif.className = "gif";
 
-            if (value.images.original.url.width > 480) {
+            if (value.images.original.width > 480) {
                 tarjeta.classList.add("grande")
             }
 
