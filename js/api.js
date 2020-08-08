@@ -14,4 +14,16 @@ export class API {
 
         return tendencias;
     }
+    async sugerenciassDEbusqueda(termino){
+
+        const url = `https://api.giphy.com/v1/tags/related/${termino}?api_key=${this.apikey}`;
+
+        const pedirSugerencias = await fetch(url);
+        
+        const sugerencias = await pedirSugerencias.json();
+
+        return sugerencias
+} 
+
 }
+

@@ -1,44 +1,25 @@
-import {apiGifs} from "./app.js";
+import {apiGifs, uiGifs} from "./app.js";
 
 export class TENDENCIAS {
     constructor() {
-
         this.tendencias = document.querySelector('.tendencias');
         this.init();
     }
     init() {
-
         this.mostrarTendencias()
     }
     mostrarTendencias() {
 
+        const elementoPadre = this.tendencias.lastElementChild;
+
         apiGifs.tendenciaGifs()
             .then(tendencia => {
-                const tendencias = tendencia.data;
-                this.crearTendencia(tendencias);
+
+                const data = tendencia.data;
+
+                uiGifs.crearElementos(data, elementoPadre);
+                
             });
     }
 
-    crearTendencia(tendencias) {
-
-        for (let value of tendencias) {
-
-            const tituloImagen = value.title.split(" ")[0],
-                tarjeta = document.createElement("div"),
-                div2 = document.createElement("div"),
-                gif = document.createElement("img");
-
-            gif.src = value.images.original.url;
-            tarjeta.className = "tarjeta";
-            gif.className = "gif";
-
-            if (value.images.original.width > 480) {
-                tarjeta.classList.add("grande")
-            }
-
-            this.tendencias.lastElementChild.appendChild(tarjeta)
-            tarjeta.appendChild(div2, gif);
-            tarjeta.appendChild(gif);
-        }
-    }
 }

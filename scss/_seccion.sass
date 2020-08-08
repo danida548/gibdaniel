@@ -27,12 +27,30 @@ section
             flex-direction: column
             overflow: hidden
             padding: 3px 3px 5px 3px
-            position: relative      
+            position: relative
+            .temas_relacionados
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                background: $fondo_degradado_light
+                position: absolute
+                bottom: 3px
+                height: 24px
+                width: 98.5%
+                visibility: hidden
+                h5
+                    font-size: 1.4rem 
+                    margin-right: 5px
+                    cursor: pointer     
             .gif
                 height: 290px
                 object-fit: cover
                 object-position: center
                 width: 100%
+            &:hover
+                @extend .light-box
+                .temas_relacionados
+                    visibility: visible    
         
         
     
