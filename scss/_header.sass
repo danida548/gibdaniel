@@ -15,9 +15,7 @@ header
             font-size: 1.2rem
             font-weight: regular
             margin-left: 7px
-            color: $color_blanco
-        
-    
+            color: $color_blanco 
     .cabecera
         @include flexbox
         height: 64px
@@ -25,19 +23,16 @@ header
         .botones
             @include flexbox
             .crear-gifos
-                padding: 9px 27px
-            
+                padding: 9px 27px         
             .seleccion
                 display: flex
                 align-items: center
                 margin: 0 16px
                 button
-                    padding: 9px 24px
-                
+                    padding: 9px 24px          
                 .flecha
                     padding: 3px 16px 7px
-                    border-left: none
-                
+                    border-left: none               
                 .temas
                     display: none
                     // display: flex
@@ -56,17 +51,12 @@ header
                         &:hover
                             background: #FFF4FD
                             border: 1px solid #CCA6C9
-                            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF 
-                        
-                    
-                
-             
+                            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF           
             .mis-gifos
                 padding: 9px 20px 9px 1px
                 width: 98px
                 &:hover
-                    border: 1px dotted $color-light
-                
+                    border: 1px dotted $color-light               
                 &::first-letter
                     border-bottom: 1px solid $color-light
                 
