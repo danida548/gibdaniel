@@ -37,7 +37,8 @@
         <div class="buscador light-box">
             <div class="buscador__titulo"> <label for="buscador">Buscar</label> </div>
             <div class="form">
-                <div class="form__principal"> <input type="text" name="buscador" id="search" autocomplete="off"
+                <div class="form__principal">
+                     <input type="text" name="buscador" id="search" autocomplete="off"
                         placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
                     <a href="#" class="search__button"> <img src="./img/lupa_inactive.svg" alt="lupa_inactive">Buscar
                     </a>
@@ -47,19 +48,26 @@
         <div class="autocompletado light-box" id="autocompletado"> </div>
         <div class="botonesSugerencias"> </div>
     </header>
-    <main>
-        <section class="sugerencias">
+    <main id="main">
+        <section class="sugerencias home">
             <div class="titulo">
                 <h3>Hoy Te Sugerimos</h3>
             </div>
             <div class="caja-tarjeta">
             </div>
         </section>
-        <section class="tendencias">
+        <section class="tendencias home">
             <div class="titulo">
                 <h3>Tendencia</h3>
             </div>
             <div class="caja-tarjeta">  
+            </div>
+        </section>
+        <section class="busqueda">
+            <div class="titulo">
+                <h3 id="titulo-de-busqueda">busqueda</h3>
+            </div>
+            <div class="caja-tarjeta" id="resultados">  
             </div>
         </section>
     </main>

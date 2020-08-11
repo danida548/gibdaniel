@@ -14,7 +14,7 @@ export class API {
 
         return tendencias;
     }
-    async sugerenciassDEbusqueda(termino){
+    async sugerenciasDeBusqueda(termino){
 
         const url = `https://api.giphy.com/v1/tags/related/${termino}?api_key=${this.apikey}`;
 
@@ -23,7 +23,32 @@ export class API {
         const sugerencias = await pedirSugerencias.json();
 
         return sugerencias
-} 
+    }
+    
+    async buscarGifs(search){
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=${this.apikey}&q=${search}&limit=27&offset=0&rating=G&lang=en`;
+
+        const obtenerDatos = await fetch(url);
+
+        const resultados = await obtenerDatos.json();
+        
+        return resultados
+
+    }
+    async autoCompletado(termino){
+
+        const url= `https://api.giphy.com/v1/gifs/search/tags?api_key=${this.apikey}&q=${termino}`;
+
+        const informacionAutocompletar = await fetch(url);
+
+        const autoCompletado = await informacionAutocompletar.json();
+
+        return autoCompletado
+    }
 
 }
+
+
+
+
 

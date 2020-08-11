@@ -1,7 +1,9 @@
 import {apiGifs} from "./app.js";
 
 export class UI {
-
+    constructor() {
+        this.main = document.querySelector('#main');
+    }
     crearElementos(data, elementoPadre) {
 
         for (let value of data) {
@@ -28,23 +30,32 @@ export class UI {
             tarjeta.appendChild(gif);
         }
     }
-    sugerenciasTitulos(tituloImagen, contenedor, etiqueta){
+    sugerenciasTitulos(tituloImagen, contenedor, etiqueta) {
 
-        apiGifs.sugerenciassDEbusqueda(tituloImagen)
+        apiGifs.sugerenciasDeBusqueda(tituloImagen)
             .then((tags) => {
 
                 let tag = tags.data;
 
-                for(const [index, value] of Object.entries(tag) ){
+                for (const [index, value] of Object.entries(tag)) {
 
-                    if(index >= 3) return;
-
+                    if (index >= 3) return;
                     etiqueta.textContent = `#${value.name}`;
-
                     contenedor.appendChild(etiqueta.cloneNode(true));
-
                 }
             })
+    }
+    mostrarSeccion(nombreSeccion) {
 
+        const {children} = this.main;
+
+        for (let seccion of children) {
+
+            if (seccion.className === nombreSeccion) {
+                seccion.style.display = 'block';
+            } else {
+                seccion.style.display = 'none';
+            }
+        }
     }
 }

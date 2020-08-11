@@ -2,7 +2,7 @@
 
 .buscador
     padding: 3px
-    margin: 40px 0px 0px
+    margin-top: 30px
     &__titulo
         background: $fondo_degradado_light
         label
@@ -10,44 +10,85 @@
             font-size: 1.4rem
             height: 24px
             line-height: 24px
-            padding: 0 6px
-            color: $color-blanco
+            padding-left: 6px
     .form 
         padding: 12px 15px
         &__principal
-            display: flex   
             #search
                 width: 90%
                 height: 48px
                 line-height: 48px
-                @extend .light-box-superior
+                @extend .light-box
                 border: 1px solid #979797
                 padding-left: 16px
-                background: $color-blanco !important
-                outline: none
+                background: $blanco !important
                 &::placeholder
-                    color: #b4b4b4
-                    font-size: 1.6px
+                    color: $gris
+                    font-size: 1.6rem
             .search__button
-                padding: 5px 10px 5px 10px
+                padding: 10px 10px 8px 10px
                 line-height: 36px
                 margin-left: 8px
                 white-space: nowrap
-                color: $color-gris
-                border: 1px solid #808080 
+                color: $gris
+                border: 1px solid #808080
                 @extend .light-box
                 img
                     margin-right: 12px
                     position: relative
                     top: 2px
-                   
-            
-                    
-                    
-
-             
-        
-        
-            
-
-
+            .search_button_active
+                background: #f7c9f3 !important
+                color: $color-light
+                img
+                    filter: invert(200%)
+            .boton__seleccionado
+                background: #e0b5dd !important
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    border: 1px dotted $color-light
+                    top: 2px
+                    left: 2px
+                    right: 3px
+                    bottom: 2px
+.autocompletado
+    position: absolute
+    z-index: 99
+    left: 100px
+    right: 100px
+    padding: 17px 16px
+    display: none
+    max-height: 155px
+    min-height: 40px
+    overflow: hidden
+    .autocompletar-active
+        background: #cfcfcf
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            border: 1px dotted $color-light
+            top: 2px
+            left: 2px
+            right: 2px
+            bottom: 2px
+    div
+        border: 1px solid #808080
+        margin-bottom: 10px
+        @extend .light-box
+        background: #f0f0f0
+        height: 36px
+        width: 89%
+        &:last-child
+            margin-bottom: 0px
+        &:hover
+            @extend .autocompletar-active
+        strong
+            color: #110038
+            font-size: 1.6rem
+            line-height: 36px
+            margin-left: 15px
+            font-weight: 400
+            background: red

@@ -9,9 +9,8 @@ export class TENDENCIAS {
         this.mostrarTendencias()
     }
     mostrarTendencias() {
-
+        
         const elementoPadre = this.tendencias.lastElementChild;
-
         apiGifs.tendenciaGifs()
             .then(tendencia => {
 
