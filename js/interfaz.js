@@ -45,7 +45,7 @@ export class UI {
                 }
             })
     }
-    mostrarSeccion(nombreSeccion) {
+    mostrarSeccion(nombreSeccion, nombreSeccion2 = 0) {
 
         const {children} = this.main;
 
