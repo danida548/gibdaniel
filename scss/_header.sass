@@ -1,7 +1,7 @@
 @import _generales
 
 header
-    .superior
+    .barra_superior
         background: $fondo_degradado_light
         box-shadow: 0 1px 0px 0px $color-light
         height: 23px
@@ -22,39 +22,103 @@ header
         margin-top: 64px
         .botones
             @include flexbox
+            button
+                max-height: 45px
             .crear-gifos
-                padding: 9px 27px         
+                padding: 9px 27px   
+            .selector-active 
+                .elegir
+                    background: #e0b5dd
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        border: 1px dotted $color-light
+                        top: 2px
+                        left: 2px
+                        right: -1px
+                        bottom: 2px
+                .flecha
+                    background: #e0b5dd
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        border: 1px dotted $color-light
+                        top: 2px
+                        left: -1px
+                        right: 2px
+                        bottom: 2px        
             .seleccion
+                max-height: 40px
                 display: flex
                 align-items: center
                 margin: 0 16px
+                position: relative
+                &:hover
+                    .elegir
+                        background: #e0b5dd
+                        position: relative
+                        &::before
+                            content: ''
+                            position: absolute
+                            border: 1px dotted $color-light
+                            top: 2px
+                            left: 2px
+                            right: -1px
+                            bottom: 2px
+                    .flecha
+                        background: #e0b5dd
+                        position: relative
+                        &::before
+                            content: ''
+                            position: absolute
+                            border: 1px dotted $color-light
+                            top: 2px
+                            left: -1px
+                            right: 2px
+                            bottom: 2px
                 button
                     padding: 9px 24px          
                 .flecha
-                    padding: 3px 16px 7px
-                    border-left: none               
+                    padding: 1.2px 16px 8.8px
+                    border-left: none
+                    img
+                        transition: .3s
+                        transform: rotate(0deg)
+                    .abajo
+                        transition: .3s
+                        transform: rotate(180deg)                   
                 .temas
-                    display: none
-                    // display: flex
-                    flex-direction: column
                     position: absolute
-                    bottom: 467px
-                    width: 208px
-                    height: 122px
-                    .seccion
-                        width: 188px
-                        height: 45px
-                        margin: 9px 10px 3px
-                        background: #F0F0F0
-                        border: 1px solid #808080
+                    overflow: hidden
+                    top: 102%
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    @extend .light-box
+                    z-index: 99
+                    padding: 10px 10px 0px
+                    transform: scaleY(0)
+                    transform-origin: top
+                    transition: .3s
+                    .tema
                         box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF
-                        &:hover
-                            background: #FFF4FD
-                            border: 1px solid #CCA6C9
-                            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF           
+                        background: #f0f0f0
+                        border: 1px solid #808080
+                        margin-bottom: 10px
+                        font-size: 16px
+                        color: $color-light
+                        text-align: left
+                    .tema-seleccionado
+                       background: #fff4fd !important
+                       border: 1px solid #cca6c9
+                       box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff !important
+                .mostrar_menu
+                    transform: scaleY(1)       
             .mis-gifos
-                padding: 9px 20px 9px 1px
-                width: 98px
+                padding: 9px 1px 9px 1px
+                width: 120px
                 &:hover
                     border: 1px dotted $color-light               
                 &::first-letter

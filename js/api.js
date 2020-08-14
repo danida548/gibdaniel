@@ -45,6 +45,18 @@ export class API {
 
         return autoCompletado
     }
+    async gifsRandom(){
+
+        const url= `https://api.giphy.com/v1/gifs/random?api_key=${this.apikey}`;
+
+        const pedirGifsRandom = await fetch(url);
+
+        const gifsRandom = await pedirGifsRandom.json();
+
+        return gifsRandom
+
+    }
+
 
 }
 

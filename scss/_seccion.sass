@@ -4,6 +4,7 @@
     display: none
 section
     margin: 66px 
+    padding-bottom: 20px
     .titulo
         background: white
         border: 1px solid #e6bbe2
@@ -29,6 +30,35 @@ section
             overflow: hidden
             padding: 3px 3px 5px 3px
             position: relative
+            &__encabezado
+                display: flex
+                align-items: center
+                justify-content: space-between
+                height: 24px
+                margin-bottom: 3px
+                padding: 0px 7px
+                h5
+                    font-size: 1.4rem
+            .ver_mas
+                background: #4180f6
+                border: 1px solid #4c2f99
+                bottom: 15px
+                box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF
+                color: white
+                font-size: 14px
+                left: 7px
+                padding: 10px 8px
+                position: absolute
+                z-index: 99
+                &:hover
+                    &::before
+                        content: ''
+                        position: absolute
+                        border: 1.5px dotted $color-light
+                        top: 3px
+                        left: 3px
+                        right: 3px
+                        bottom: 3px
             .temas_relacionados
                 display: flex
                 align-items: center

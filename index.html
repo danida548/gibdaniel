@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="superior">
+        <div class="barra_superior">
             <h3>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h3>
         </div>
         <div class="cabecera">
@@ -22,13 +22,13 @@
             <div class="botones">
                 <button class="crear-gifos boton-color">Crear Guifos</button>
                 <div class="seleccion">
-                    <button class="botones-selector boton-color">Elegir Tema</button>
-                    <div class="flecha botones-selector boton-color">
+                    <button class=" elegir botones-selector">Elegir Tema</button>
+                    <div class="flecha botones-selector">
                         <img src="/img/dropdown.svg" alt="dropdown">
                     </div>
-                    <div class="temas fondo-ventana">
-                        <button class="seccion">Sailor Day</button>
-                        <button class="seccion">Sailor Night</button>
+                    <div class="temas">
+                        <button class="tema tema-seleccionado" id="day">Sailor Day</button>
+                        <button class="tema" id="night">Sailor Night</button>
                     </div>
                 </div>
                 <button class="mis-gifos">Mis GuifOS</button>
@@ -49,14 +49,14 @@
         <div class="botonesSugerencias"> </div>
     </header>
     <main id="main">
-        <section class="sugerencias home">
+        <section class="sugerencias">
             <div class="titulo">
                 <h3>Hoy Te Sugerimos</h3>
             </div>
-            <div class="caja-tarjeta">
+            <div class="caja-tarjeta " id="caja_sugerencia">
             </div>
         </section>
-        <section class="tendencias home">
+        <section class="tendencias">
             <div class="titulo">
                 <h3>Tendencia</h3>
             </div>

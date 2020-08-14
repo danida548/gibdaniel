@@ -60,7 +60,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, .autocompletado div, .buscador .form__principal .search__button, section .caja-tarjeta .tarjeta:hover {
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .autocompletado div, .buscador .form__principal .search__button {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -128,282 +128,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, .autocompletado div, .buscador .form__principal .search__button, section .caja-tarjeta .tarjeta:hover {
-  background: #E6E6E6;
-  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
-}
-
-.light-box-superior, .buscador .form__principal #search {
-  background: #E6E6E6;
-  box-shadow: inset 2px 2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
-}
-
-header .superior {
-  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  box-shadow: 0 1px 0px 0px #110038;
-  height: 23px;
-  line-height: 23px;
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
-}
-header .superior h3 {
-  font-size: 1.2rem;
-  font-weight: regular;
-  margin-left: 7px;
-  color: #ffffff;
-}
-header .cabecera {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  margin-top: 64px;
-}
-header .cabecera .botones {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .cabecera .botones .crear-gifos {
-  padding: 9px 27px;
-}
-header .cabecera .botones .seleccion {
-  display: flex;
-  align-items: center;
-  margin: 0 16px;
-}
-header .cabecera .botones .seleccion button {
-  padding: 9px 24px;
-}
-header .cabecera .botones .seleccion .flecha {
-  padding: 3px 16px 7px;
-  border-left: none;
-}
-header .cabecera .botones .seleccion .temas {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  bottom: 467px;
-  width: 208px;
-  height: 122px;
-}
-header .cabecera .botones .seleccion .temas .seccion {
-  width: 188px;
-  height: 45px;
-  margin: 9px 10px 3px;
-  background: #F0F0F0;
-  border: 1px solid #808080;
-  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-}
-header .cabecera .botones .seleccion .temas .seccion:hover {
-  background: #FFF4FD;
-  border: 1px solid #CCA6C9;
-  box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-}
-header .cabecera .botones .mis-gifos {
-  padding: 9px 20px 9px 1px;
-  width: 98px;
-}
-header .cabecera .botones .mis-gifos:hover {
-  border: 1px dotted #110038;
-}
-header .cabecera .botones .mis-gifos::first-letter {
-  border-bottom: 1px solid #110038;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  margin: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "chakra petch", sans-serif;
-  background: #fff4fd;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  padding: 0 100px;
-  color: #ffffff;
-  background: blue11;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.boton-color {
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
-}
-.boton-color:hover {
-  background: #e0b5dd;
-  position: relative;
-}
-.boton-color:hover::before {
-  content: "";
-  position: absolute;
-  border: 1px dotted #110038;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-}
-
-.botones-selector {
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
-}
-
-.light-box, .autocompletado div, .buscador .form__principal .search__button, section .caja-tarjeta .tarjeta:hover {
-  background: #E6E6E6;
-  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
-}
-
-.light-box-superior, .buscador .form__principal #search {
-  background: #E6E6E6;
-  box-shadow: inset 2px 2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
-}
-
-.busqueda {
-  display: none;
-}
-
-section {
-  margin: 66px;
-}
-section .titulo {
-  background: white;
-  border: 1px solid #e6bbe2;
-  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-  height: 32px;
-  line-height: 32px;
-  margin-bottom: 19px;
-}
-section .titulo h3 {
-  color: #110038;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-left: 7px;
-}
-section .caja-tarjeta {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  grid-auto-flow: row dense;
-}
-section .caja-tarjeta .grande {
-  grid-column-end: span 2;
-}
-section .caja-tarjeta .tarjeta {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 3px 3px 5px 3px;
-  position: relative;
-}
-section .caja-tarjeta .tarjeta .temas_relacionados {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  position: absolute;
-  bottom: 3px;
-  height: 24px;
-  width: 98.5%;
-  visibility: hidden;
-}
-section .caja-tarjeta .tarjeta .temas_relacionados h5 {
-  font-size: 1.4rem;
-  margin-right: 5px;
-  cursor: pointer;
-}
-section .caja-tarjeta .tarjeta .gif {
-  height: 290px;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
-section .caja-tarjeta .tarjeta:hover .temas_relacionados {
-  visibility: visible;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  margin: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "chakra petch", sans-serif;
-  background: #fff4fd;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  padding: 0 100px;
-  color: #ffffff;
-  background: blue11;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.boton-color {
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
-}
-.boton-color:hover {
-  background: #e0b5dd;
-  position: relative;
-}
-.boton-color:hover::before {
-  content: "";
-  position: absolute;
-  border: 1px dotted #110038;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-}
-
-.botones-selector {
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
-}
-
-.light-box, .autocompletado div, .buscador .form__principal .search__button, section .caja-tarjeta .tarjeta:hover {
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .autocompletado div, .buscador .form__principal .search__button {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -517,4 +242,486 @@ button {
   line-height: 36px;
   margin-left: 15px;
   font-weight: 400;
+}
+
+.botonesSugerencias {
+  margin-top: 24px;
+}
+.botonesSugerencias a {
+  margin-right: 8px;
+  padding: 8px 7px;
+  background: #4180f6;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "chakra petch", sans-serif;
+  background: #fff4fd;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0 100px;
+  color: #ffffff;
+  background: blue11;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.boton-color {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
+}
+.boton-color:hover {
+  background: #e0b5dd;
+  position: relative;
+}
+.boton-color:hover::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+
+.botones-selector {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
+}
+
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .buscador .form__principal .search__button, .autocompletado div {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
+}
+
+.light-box-superior, .buscador .form__principal #search {
+  background: #E6E6E6;
+  box-shadow: inset 2px 2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
+}
+
+header .barra_superior {
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  box-shadow: 0 1px 0px 0px #110038;
+  height: 23px;
+  line-height: 23px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+}
+header .barra_superior h3 {
+  font-size: 1.2rem;
+  font-weight: regular;
+  margin-left: 7px;
+  color: #ffffff;
+}
+header .cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin-top: 64px;
+}
+header .cabecera .botones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .cabecera .botones button {
+  max-height: 45px;
+}
+header .cabecera .botones .crear-gifos {
+  padding: 9px 27px;
+}
+header .cabecera .botones .selector-active .elegir {
+  background: #e0b5dd;
+  position: relative;
+}
+header .cabecera .botones .selector-active .elegir::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: 2px;
+  right: -1px;
+  bottom: 2px;
+}
+header .cabecera .botones .selector-active .flecha {
+  background: #e0b5dd;
+  position: relative;
+}
+header .cabecera .botones .selector-active .flecha::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: -1px;
+  right: 2px;
+  bottom: 2px;
+}
+header .cabecera .botones .seleccion {
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+  position: relative;
+}
+header .cabecera .botones .seleccion:hover .elegir {
+  background: #e0b5dd;
+  position: relative;
+}
+header .cabecera .botones .seleccion:hover .elegir::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: 2px;
+  right: -1px;
+  bottom: 2px;
+}
+header .cabecera .botones .seleccion:hover .flecha {
+  background: #e0b5dd;
+  position: relative;
+}
+header .cabecera .botones .seleccion:hover .flecha::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: -1px;
+  right: 2px;
+  bottom: 2px;
+}
+header .cabecera .botones .seleccion button {
+  padding: 9px 24px;
+}
+header .cabecera .botones .seleccion .flecha {
+  padding: 1.2px 16px 8.8px;
+  border-left: none;
+}
+header .cabecera .botones .seleccion .flecha img {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+header .cabecera .botones .seleccion .flecha .abajo {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+header .cabecera .botones .seleccion .temas {
+  position: absolute;
+  overflow: hidden;
+  top: 102%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  padding: 10px 10px 0px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+header .cabecera .botones .seleccion .temas .tema {
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #110038;
+  text-align: left;
+}
+header .cabecera .botones .seleccion .temas .tema-seleccionado {
+  background: #fff4fd !important;
+  border: 1px solid #cca6c9;
+  box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff !important;
+}
+header .cabecera .botones .seleccion .mostrar_menu {
+  transform: scaleY(1);
+}
+header .cabecera .botones .mis-gifos {
+  padding: 9px 1px 9px 1px;
+  width: 120px;
+}
+header .cabecera .botones .mis-gifos:hover {
+  border: 1px dotted #110038;
+}
+header .cabecera .botones .mis-gifos::first-letter {
+  border-bottom: 1px solid #110038;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "chakra petch", sans-serif;
+  background: #fff4fd;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0 100px;
+  color: #ffffff;
+  background: blue11;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.boton-color {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
+}
+.boton-color:hover {
+  background: #e0b5dd;
+  position: relative;
+}
+.boton-color:hover::before {
+  content: "";
+  position: absolute;
+  border: 1px dotted #110038;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+
+.botones-selector {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
+}
+
+.light-box, section .caja-tarjeta .tarjeta:hover, .buscador .form__principal .search__button, .autocompletado div, header .cabecera .botones .seleccion .temas {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
+}
+
+.light-box-superior, .buscador .form__principal #search {
+  background: #E6E6E6;
+  box-shadow: inset 2px 2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
+}
+
+.busqueda {
+  display: none;
+}
+
+section {
+  margin: 66px;
+  padding-bottom: 20px;
+}
+section .titulo {
+  background: white;
+  border: 1px solid #e6bbe2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 19px;
+}
+section .titulo h3 {
+  color: #110038;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 7px;
+}
+section .caja-tarjeta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: row dense;
+}
+section .caja-tarjeta .grande {
+  grid-column-end: span 2;
+}
+section .caja-tarjeta .tarjeta {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 3px 3px 5px 3px;
+  position: relative;
+}
+section .caja-tarjeta .tarjeta__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  margin-bottom: 3px;
+  padding: 0px 7px;
+}
+section .caja-tarjeta .tarjeta__encabezado h5 {
+  font-size: 1.4rem;
+}
+section .caja-tarjeta .tarjeta .ver_mas {
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  bottom: 15px;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  color: white;
+  font-size: 14px;
+  left: 7px;
+  padding: 10px 8px;
+  position: absolute;
+  z-index: 99;
+}
+section .caja-tarjeta .tarjeta .ver_mas:hover::before {
+  content: "";
+  position: absolute;
+  border: 1.5px dotted #110038;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+section .caja-tarjeta .tarjeta .temas_relacionados {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  position: absolute;
+  bottom: 3px;
+  height: 24px;
+  width: 98.5%;
+  visibility: hidden;
+}
+section .caja-tarjeta .tarjeta .temas_relacionados h5 {
+  font-size: 1.4rem;
+  margin-right: 5px;
+  cursor: pointer;
+}
+section .caja-tarjeta .tarjeta .gif {
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+section .caja-tarjeta .tarjeta:hover .temas_relacionados {
+  visibility: visible;
+}
+
+.night {
+  background: #110038;
+}
+.night header .barra_superior {
+  background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.night header .cabecera .botones .boton_color {
+  background: #ee3efe;
+  background: #EE3EFE;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: white;
+}
+.night header .cabecera .botones .boton_color:hover {
+  background: #cb2fda;
+}
+.night header .cabecera .botones .selector-active .botones_selector {
+  background: #cb2fda !important;
+}
+.night header .cabecera .botones .selector-active .botones_selector::before {
+  border: 1px dotted #ffffff;
+}
+.night header .cabecera .botones .selector:hover .botones_selector {
+  background: #cb2fda;
+}
+.night header .cabecera .botones .selector:hover .botones_selector::before {
+  border: 1px dotted #ffffff;
+}
+.night header .cabecera .botones .selector .botones_selector {
+  background: #EE3EFE;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: white;
+}
+.night header .cabecera .botones .selector .flecha img {
+  filter: invert(100%);
+}
+.night header .cabecera .botones .selector .temas .tema-seleccionado {
+  background: #2E32FB !important;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0;
+  color: white;
+}
+.night header .cabecera .botones .mis_guifos {
+  color: white;
+}
+.night header .cabecera .botones .mis_guifos:hover {
+  border: 1px dotted white;
+}
+.night header .cabecera .botones .mis_guifos::first-letter {
+  border-bottom: 1px solid white;
+}
+.night header .botonesSugerencias a {
+  background: #2E32FB;
+  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+.night header .buscador__titulo {
+  background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.night header .buscador .form__principal .search_button_active {
+  background: #EE3EFE !important;
+  border: 1px solid #110038;
+  color: white;
+}
+.night header .buscador .form__principal .search_button_active img {
+  filter: contrast(300%);
+}
+.night header .buscador .form__principal .boton__seleccionado {
+  background: #db2feb !important;
+}
+.night header .buscador .form__principal .boton__seleccionado::before {
+  border: 1.5px dotted #ffffff !important;
+}
+.night main section .titulo {
+  border: 1px solid #2E32FB;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+.night main section .caja_tarjeta .tarjeta__encabezado {
+  background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.night main section .caja_tarjeta .tarjeta .ver_mas {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+}
+.night main section .caja_tarjeta .temas_relacionados {
+  background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }

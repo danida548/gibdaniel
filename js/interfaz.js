@@ -51,7 +51,7 @@ export class UI {
 
         for (let seccion of children) {
 
-            if (seccion.className === nombreSeccion) {
+            if (seccion.className === nombreSeccion || seccion.className === nombreSeccion2) {
                 seccion.style.display = 'block';
             } else {
                 seccion.style.display = 'none';

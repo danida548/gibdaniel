@@ -1,0 +1,78 @@
+.night
+    background: #110038
+    header
+        .barra_superior
+            background: $fondo_degradado_dark
+        .cabecera
+            .botones
+                .boton_color
+                    background: #ee3efe
+                    background: #EE3EFE
+                    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+                    color: white
+                    &:hover
+                        background: #cb2fda
+                .selector-active
+                    .botones_selector
+                        background: #cb2fda !important
+                        &::before
+                            border: 1px dotted $color-blanco
+                .selector
+                    &:hover
+                        .botones_selector
+                            background: #cb2fda
+                            &::before
+                                border: 1px dotted $color-blanco
+                    .botones_selector
+                        background: #EE3EFE
+                        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+                        color: white
+                    .flecha
+                        img
+                            filter: invert(100%)
+                    .temas
+                        .tema-seleccionado
+                            background: #2E32FB !important
+                            border: 1px solid rgba(51,53,143,0.20)
+                            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 
+                            color: white
+                .mis_guifos
+                    color: white
+                    &:hover
+                        border: 1px dotted white
+                    &::first-letter
+                        border-bottom: 1px solid white
+        .botonesSugerencias
+            a
+                background: #2E32FB
+                box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF
+        .buscador
+            &__titulo
+                background: $fondo_degradado_dark
+            .form
+                &__principal
+                    .search_button_active
+                        background: #EE3EFE !important
+                        border: 1px solid #110038
+                        color: white
+                        img
+                            filter: contrast(300%)
+                    .boton__seleccionado
+                        background: #db2feb !important
+                        &::before
+                            border: 1.5px dotted $color-blanco !important
+    main
+        section
+            .titulo
+                border: 1px solid #2E32FB
+                box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038
+            .caja_tarjeta
+                .tarjeta
+                    &__encabezado
+                        background: $fondo_degradado_dark
+                    .ver_mas
+                        background: #2E32FB
+                        border: 1px solid #4C2F99
+                .temas_relacionados
+                    background: $fondo_degradado_dark
+                                    
