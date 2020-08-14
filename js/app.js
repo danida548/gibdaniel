@@ -5,22 +5,25 @@ import {BUSQUEDA} from "./busquedas.js"
 import {BARRADEBUSQUEDA} from "./barradebusqueda.js";
 import {SUGERENCIAS} from "./sugerencias.js";
 import {FUNCIONES} from "./funcionalidades.js";
+import {MISGUIFOS} from "./misguifos.js";
 
 
 //tiene todos los datos de la API
 export const apiGifs = new API('9irbiK8l658g0xVfQOoCAh6M94vBGIGr');
-//logica seccion tendencia
-export const tendenciasGifs = new TENDENCIAS();
 //creacion de elemento
 export const uiGifs = new UI();
+//logica seccion tendencia
+export const tendenciasGifs = new TENDENCIAS();
 //buscar gifs
 export const buscarGifs = new BUSQUEDA();
 //funcion Input
-export const barradebusqueda = new BARRADEBUSQUEDA();
+const barraDeBusqueda = new BARRADEBUSQUEDA();
 //seccion sugerencias
-export const sugerenciasGifs = new SUGERENCIAS();
+const sugerenciasGifs = new SUGERENCIAS();
 //funcionalidades extras
-const funcionalidades = new FUNCIONES ();
+const funcionalidades = new FUNCIONES();
+//seccion mis guifos
+const crearGuifs = new MISGUIFOS();
 
 
 
@@ -47,36 +50,38 @@ header.addEventListener('click', (e)=>{
 document.querySelector('.logo').addEventListener('click', () => {
     buscarGifs.eliminarBotonesSugerencias();
     uiGifs.mostrarSeccion('sugerencias','tendencias');
+    crearGuifs.buscador.style.display = 'block';
+    crearGuifs.botones.style.display ='inherit';
     barraDeBusqueda.inputBuscar.value = "";
     barraDeBusqueda.botonBuscar.classList.remove('search_button_active');
 });
 
 
 // funcion del boton buscar
-barradebusqueda.botonBuscar.addEventListener('click',() => {
-        if (!barradebusqueda.inputBuscar.value) return false;
-        barradebusqueda.cerrarLista();
+barraDeBusqueda.botonBuscar.addEventListener('click',() => {
+        if (!barraDeBusqueda.inputBuscar.value) return false;
+        barraDeBusqueda.cerrarLista();
         barraDeBusqueda.botonBuscar.classList.remove('boton__seleccionado');
-        buscarGifs.busquedaGifs(barradebusqueda.inputBuscar.value);
+        buscarGifs.busquedaGifs(barraDeBusqueda.inputBuscar.value);
     });
 
 //mostrar sugerencias abajo del input
-barradebusqueda.inputBuscar.addEventListener('input', () => {
-    const datoaBuscar = barradebusqueda.inputBuscar.value;
+barraDeBusqueda.inputBuscar.addEventListener('input', () => {
+    const datoaBuscar = barraDeBusqueda.inputBuscar.value;
 
-    barradebusqueda.cerrarLista();
+    barraDeBusqueda.cerrarLista();
     if (!datoaBuscar) {
-        barradebusqueda.botonBuscar.classList.remove('search_button_active');
-        barradebusqueda.botonBuscar.classList.remove('boton__seleccionado');
+        barraDeBusqueda.botonBuscar.classList.remove('search_button_active');
+        barraDeBusqueda.botonBuscar.classList.remove('boton__seleccionado');
         return false;
 
     }
-    barradebusqueda.botonBuscar.classList.add('search_button_active');
+    barraDeBusqueda.botonBuscar.classList.add('search_button_active');
 
     apiGifs.autoCompletado(datoaBuscar.trimStart())
-        .then(datos => barradebusqueda.autoCompletar(datos))
+        .then(datos => barraDeBusqueda.autoCompletar(datos))
 });
 
-barradebusqueda.inputBuscar.addEventListener('keydown', (e) => {
-    barradebusqueda.operarConTeclado(e);
+barraDeBusqueda.inputBuscar.addEventListener('keydown', (e) => {
+    barraDeBusqueda.operarConTeclado(e);
 })

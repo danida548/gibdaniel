@@ -60,7 +60,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .autocompletado div, .buscador .form__principal .search__button {
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .selector .temas, .autocompletado div, .buscador .form__principal .search__button {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -128,7 +128,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .autocompletado div, .buscador .form__principal .search__button {
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .selector .temas, .autocompletado div, .buscador .form__principal .search__button {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -316,7 +316,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .seleccion .temas, .buscador .form__principal .search__button, .autocompletado div {
+.light-box, section .caja-tarjeta .tarjeta:hover, header .cabecera .botones .selector .temas, .buscador .form__principal .search__button, .autocompletado div {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -358,7 +358,7 @@ header .cabecera .botones {
 header .cabecera .botones button {
   max-height: 45px;
 }
-header .cabecera .botones .crear-gifos {
+header .cabecera .botones .crear_guifos {
   padding: 9px 27px;
 }
 header .cabecera .botones .selector-active .elegir {
@@ -387,18 +387,18 @@ header .cabecera .botones .selector-active .flecha::before {
   right: 2px;
   bottom: 2px;
 }
-header .cabecera .botones .seleccion {
+header .cabecera .botones .selector {
   max-height: 40px;
   display: flex;
   align-items: center;
   margin: 0 16px;
   position: relative;
 }
-header .cabecera .botones .seleccion:hover .elegir {
+header .cabecera .botones .selector:hover .elegir {
   background: #e0b5dd;
   position: relative;
 }
-header .cabecera .botones .seleccion:hover .elegir::before {
+header .cabecera .botones .selector:hover .elegir::before {
   content: "";
   position: absolute;
   border: 1px dotted #110038;
@@ -407,11 +407,11 @@ header .cabecera .botones .seleccion:hover .elegir::before {
   right: -1px;
   bottom: 2px;
 }
-header .cabecera .botones .seleccion:hover .flecha {
+header .cabecera .botones .selector:hover .flecha {
   background: #e0b5dd;
   position: relative;
 }
-header .cabecera .botones .seleccion:hover .flecha::before {
+header .cabecera .botones .selector:hover .flecha::before {
   content: "";
   position: absolute;
   border: 1px dotted #110038;
@@ -420,22 +420,22 @@ header .cabecera .botones .seleccion:hover .flecha::before {
   right: 2px;
   bottom: 2px;
 }
-header .cabecera .botones .seleccion button {
+header .cabecera .botones .selector button {
   padding: 9px 24px;
 }
-header .cabecera .botones .seleccion .flecha {
+header .cabecera .botones .selector .flecha {
   padding: 1.2px 16px 8.8px;
   border-left: none;
 }
-header .cabecera .botones .seleccion .flecha img {
+header .cabecera .botones .selector .flecha img {
   transition: 0.3s;
   transform: rotate(0deg);
 }
-header .cabecera .botones .seleccion .flecha .abajo {
+header .cabecera .botones .selector .flecha .abajo {
   transition: 0.3s;
   transform: rotate(180deg);
 }
-header .cabecera .botones .seleccion .temas {
+header .cabecera .botones .selector .temas {
   position: absolute;
   overflow: hidden;
   top: 102%;
@@ -448,7 +448,7 @@ header .cabecera .botones .seleccion .temas {
   transform-origin: top;
   transition: 0.3s;
 }
-header .cabecera .botones .seleccion .temas .tema {
+header .cabecera .botones .selector .temas .tema {
   box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   background: #f0f0f0;
   border: 1px solid #808080;
@@ -457,12 +457,12 @@ header .cabecera .botones .seleccion .temas .tema {
   color: #110038;
   text-align: left;
 }
-header .cabecera .botones .seleccion .temas .tema-seleccionado {
+header .cabecera .botones .selector .temas .tema-seleccionado {
   background: #fff4fd !important;
   border: 1px solid #cca6c9;
   box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff !important;
 }
-header .cabecera .botones .seleccion .mostrar_menu {
+header .cabecera .botones .selector .mostrar_menu {
   transform: scaleY(1);
 }
 header .cabecera .botones .mis-gifos {
@@ -534,7 +534,7 @@ button {
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
 }
 
-.light-box, section .caja-tarjeta .tarjeta:hover, .buscador .form__principal .search__button, .autocompletado div, header .cabecera .botones .seleccion .temas {
+.light-box, section .caja-tarjeta .tarjeta:hover, .buscador .form__principal .search__button, .autocompletado div, header .cabecera .botones .selector .temas {
   background: #E6E6E6;
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
 }
@@ -542,6 +542,10 @@ button {
 .light-box-superior, .buscador .form__principal #search {
   background: #E6E6E6;
   box-shadow: inset 2px 2px 0 0 #B4B4B4, inset 2px 2px 0 0 #ffffff;
+}
+
+.guifos {
+  display: none;
 }
 
 .busqueda {
@@ -583,6 +587,7 @@ section .caja-tarjeta .tarjeta {
   position: relative;
 }
 section .caja-tarjeta .tarjeta__encabezado {
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -646,19 +651,18 @@ section .caja-tarjeta .tarjeta:hover .temas_relacionados {
 .night header .barra_superior {
   background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
-.night header .cabecera .botones .boton_color {
-  background: #ee3efe;
+.night header .cabecera .botones .boton-color {
   background: #EE3EFE;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: white;
 }
-.night header .cabecera .botones .boton_color:hover {
+.night header .cabecera .botones .boton-color:hover {
   background: #cb2fda;
 }
-.night header .cabecera .botones .selector-active .botones_selector {
+.night header .cabecera .botones .selector-active .botones-selector {
   background: #cb2fda !important;
 }
-.night header .cabecera .botones .selector-active .botones_selector::before {
+.night header .cabecera .botones .selector-active .botones-selector::before {
   border: 1px dotted #ffffff;
 }
 .night header .cabecera .botones .selector:hover .botones_selector {
@@ -667,7 +671,7 @@ section .caja-tarjeta .tarjeta:hover .temas_relacionados {
 .night header .cabecera .botones .selector:hover .botones_selector::before {
   border: 1px dotted #ffffff;
 }
-.night header .cabecera .botones .selector .botones_selector {
+.night header .cabecera .botones .selector .botones-selector {
   background: #EE3EFE;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: white;
@@ -715,13 +719,13 @@ section .caja-tarjeta .tarjeta:hover .temas_relacionados {
   border: 1px solid #2E32FB;
   box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
 }
-.night main section .caja_tarjeta .tarjeta__encabezado {
+.night main section .caja-tarjeta .tarjeta__encabezado {
   background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
-.night main section .caja_tarjeta .tarjeta .ver_mas {
+.night main section .caja-tarjeta .tarjeta .ver_mas {
   background: #2E32FB;
   border: 1px solid #4C2F99;
 }
-.night main section .caja_tarjeta .temas_relacionados {
+.night main section .caja-tarjeta .temas_relacionados {
   background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }

@@ -7,22 +7,25 @@ export class FUNCIONES{
         this.init();
     }
     init(){
-        this.botonSelector
-        this.selectorTemas
+        this.botonSelector();
+        this.selectorTemas();
     }
+
     botonSelector(){
-        this.botonEstilos.firstElementChild.addEventListener('click', () => {
+    
+        this.botonEstilo.firstElementChild.addEventListener('click', () => {
+
             this.estiloBotonSelector();
         });
-        this.botonEstilos.firstElementChild.nextElementSibling.addEventListener('click', () => {
+        this.botonEstilo.firstElementChild.nextElementSibling.addEventListener('click', () =>{
             this.estiloBotonSelector();
         });
     }
     estiloBotonSelector(){
 
-        this.botonEstilos.classList.toggle('selector-active');
-        this.botonEstilos.lastElementChild.classList.toggle('mostrar_menu');
-        this.botonEstilos.querySelector('img').classList.toggle('abajo'); //voltea la flecha
+        this.botonEstilo.classList.toggle('selector-active');
+        this.botonEstilo.lastElementChild.classList.toggle('mostrar_menu');
+        this.botonEstilo.querySelector('img').classList.toggle('abajo'); //voltea la flecha
     }
     selectorTemas(){
         this.day.addEventListener('click', () => {
