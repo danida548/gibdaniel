@@ -17,15 +17,15 @@ export class UI {
             gif.className = "gif";
 
             if (value.images.original.width > 480) {
-                tarjeta.classList.add("grande")
+                tarjeta.classList.add("grande");
             }
 
             const etiqueta = document.createElement("h5");
             etiqueta.className = "texto";
             contenedor.className = "temas_relacionados";
-            this.sugerenciasTitulos(tituloImagen, contenedor, etiqueta)
+            this.sugerenciasTitulos(tituloImagen, contenedor, etiqueta);
 
-            elementoPadre.appendChild(tarjeta)
+            elementoPadre.appendChild(tarjeta);
             tarjeta.appendChild(contenedor);
             tarjeta.appendChild(gif);
         }

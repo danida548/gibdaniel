@@ -1,7 +1,7 @@
 export class FUNCIONES{
     constructor(){
         this.botonEstilo = document.querySelector('.selector');
-        this.day = document.querySelector('#day')
+        this.day = document.querySelector('#day');
         this.night = document.querySelector('#night');
         this.logo = document.querySelector('.logo img');
         this.init();

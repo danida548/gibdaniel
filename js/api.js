@@ -22,7 +22,7 @@ export class API {
         
         const sugerencias = await pedirSugerencias.json();
 
-        return sugerencias
+        return sugerencias;
     }
     
     async buscarGifs(search){
@@ -32,7 +32,7 @@ export class API {
 
         const resultados = await obtenerDatos.json();
         
-        return resultados
+        return resultados;
 
     }
     async autoCompletado(termino){
@@ -43,7 +43,7 @@ export class API {
 
         const autoCompletado = await informacionAutocompletar.json();
 
-        return autoCompletado
+        return autoCompletado;
     }
     async gifsRandom(){
 
@@ -53,7 +53,7 @@ export class API {
 
         const gifsRandom = await pedirGifsRandom.json();
 
-        return gifsRandom
+        return gifsRandom;
 
     }
 

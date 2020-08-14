@@ -38,8 +38,7 @@ export class BARRADEBUSQUEDA {
         }
         }
         
-    
-    
+
         operarConTeclado(e) {
         let items;
         if(this.cajaAutocompletado.children.length > 0){

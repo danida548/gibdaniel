@@ -1,4 +1,4 @@
-import {apiGifs, uiGifs} from "./app.js"
+import {apiGifs, uiGifs} from "./app.js";
 
 export class MISGUIFOS{
     constructor(){
@@ -17,7 +17,7 @@ export class MISGUIFOS{
     botonesGuifos(){
         this.botonMisGuifos.addEventListener('click', () =>{
             this.ocultarMostrar(this.buscador, 'none');
-            this.mostrarSeccion('guifos')
+            this.mostrarSeccion('guifos');
         })
         this.botonCrearGuifos.addEventListener('click', () =>{
             this.ocultarMostrar(this.buscador, 'none');
@@ -37,7 +37,7 @@ export class MISGUIFOS{
         botonDos.className = 'boton-color';
         botonDos.innerText = 'Comenzar';
         botones.className = 'botones';
-        div.classList.add('light-box', 'crearGuifos')     
+        div.classList.add('light-box', 'crearGuifos');     
         div.innerHTML = `      
                 <div class="titulo_cuadro">
                     <h4>Crear Guifos</h4>
@@ -59,22 +59,22 @@ export class MISGUIFOS{
                         <li>¿Quieres comenzar a crear tu <span>guifo</span> ahora?</li>
                     </ul>
                 </div>        
-            `
+            `;
         botones.appendChild(botonUno);
         botones.appendChild(botonDos);
         div.appendChild(botones);
         this.crearGuifos.appendChild(div);
 
-        botonUno.addEventListener('click', () => this.cerrarCrearGuifos())
-        botonDos.addEventListener('click', () => this.segundaParte())
+        botonUno.addEventListener('click', () => this.cerrarCrearGuifos());
+        botonDos.addEventListener('click', () => this.segundaParte());
     }
     
     segundaParte(){
         this.crearGuifos.innerHTML = '';
-        this.ocultarMostrar(this.misGuifos, 'none')
+        this.ocultarMostrar(this.misGuifos, 'none');
         const div = document.createElement('div');
-        const barraInferior = document.createElement('div')
-        const titulo = `<div class="titulo_cuadro"><h4>Un Chequeo Antes De Comenzar</h4></div>`
+        const barraInferior = document.createElement('div');
+        const titulo = `<div class="titulo_cuadro"><h4>Un Chequeo Antes De Comenzar</h4></div>`;
         const video = document.createElement('video');
         const botones = document.createElement('div');
         const botonUno = document.createElement('button');
@@ -98,7 +98,7 @@ export class MISGUIFOS{
         div.appendChild(barraInferior);
         this.crearGuifos.appendChild(div);
 
-        botonUno.addEventListener('click', () => this.terceraParte(barraInferior, botonUno, botonDos, botones))
+        botonUno.addEventListener('click', () => this.terceraParte(barraInferior, botonUno, botonDos, botones));
 
     }
     

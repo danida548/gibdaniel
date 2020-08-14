@@ -26,7 +26,7 @@ export class BUSQUEDA {
         let {length} = elementoPadre.children;
         if (length) {
             for (length; length > 0; length--)
-                elementoPadre.removeChild(elementoPadre.lastElementChild)
+                elementoPadre.removeChild(elementoPadre.lastElementChild);
         }
     }
     buscarAlDarClick(elemento){
@@ -45,10 +45,10 @@ export class BUSQUEDA {
         uiGifs.sugerenciasTitulos(search, this.botonesSugerencias, a);
     }
     eliminarBotonSugerencias(){
-        const{children} = this.botonesSugerencias
+        const{children} = this.botonesSugerencias;
         if(children){
             while(children.length > 0){
-                this.botonesSugerencias.removeChild(this.botonesSugerencias.lastElementChild)
+                this.botonesSugerencias.removeChild(this.botonesSugerencias.lastElementChild);
             }
                
     }

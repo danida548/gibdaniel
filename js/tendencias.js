@@ -6,7 +6,7 @@ export class TENDENCIAS {
         this.init();
     }
     init() {
-        this.mostrarTendencias()
+        this.mostrarTendencias();
     }
     mostrarTendencias() {
         

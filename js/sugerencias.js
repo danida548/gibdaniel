@@ -45,7 +45,7 @@ export class SUGERENCIAS{
                                 <img src="./img/button3.svg" alt="" class="tarjeta__cerrar">
                             </div>
                                 <img src="${data.images.original.url}" alt="" class="gif">
-                            `
+                            `;
         div.innerHTML = template;
         div.appendChild(enlace);
         this.sugerencias.appendChild(div);
