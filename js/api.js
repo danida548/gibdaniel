@@ -56,7 +56,30 @@ export class API {
         return gifsRandom;
 
     }
+    async uploadGuifs(blob){
 
+        const option = {
+            method: 'POST',
+            body: blob,
+            json: true
+        }
+        const url = `https://upload.giphy.com/v1/gifs?api_key=${this.apikey}`;
+
+        const mandarBlob = await fetch(url, option);
+
+        const data = await mandarBlob.json();
+
+        return data
+    }
+    async gifPorId(id){
+        const url = `https://api.giphy.com/v1/gifs/${id}?api_key=${this.apikey}`;
+
+        const recibirGuif = await fetch(url);
+
+        const guifo = await recibirGuif.json();
+
+        return guifo
+    }
 
 }
 

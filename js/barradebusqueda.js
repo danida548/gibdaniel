@@ -76,7 +76,8 @@ export class BARRADEBUSQUEDA {
         } else if (e.keyCode == 13){
             if(!this.inputBuscar.value) return false;
             this.botonBuscar.classList.remove('boton__seleccionado');
-            buscarGifs.mostrarResultadosDeBusqueda(this.inputBuscar.value)
+            buscarGifs.busquedaGifs(this.inputBuscar.value); //cambie mostrarResultadosDeBusqueda por busquedaGuifs
+            this.inputBuscar.value = ''; //verificar
             }
         }
         

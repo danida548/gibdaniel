@@ -20,6 +20,14 @@ header
         @include flexbox
         height: 64px
         margin-top: 64px
+        .logo
+            display: flex
+            align-items: center
+            .fa-arrow-left
+                margin-right: 5px
+                font-size: 3rem
+                color: black
+                display: none
         .botones
             @include flexbox
             button
@@ -118,11 +126,15 @@ header
                     transform: scaleY(1)       
             .mis-gifos
                 padding: 9px 1px 9px 1px
-                width: 120px
+                width: 98px
                 &:hover
-                    border: 1px dotted $color-light               
+                    border: 1px dotted $color-light                     
                 &::first-letter
                     border-bottom: 1px solid $color-light
+                .mis_guifod-active
+                    color: $color-gris
+                    &::first-letter
+                        border-bottom-color: $color-gris
                 
             
                                 

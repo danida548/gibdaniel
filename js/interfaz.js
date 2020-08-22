@@ -38,9 +38,10 @@ export class UI {
                 let tag = tags.data;
 
                 for (const [index, value] of Object.entries(tag)) {
-
                     if (index >= 3) return;
+
                     etiqueta.textContent = `#${value.name}`;
+                    
                     contenedor.appendChild(etiqueta.cloneNode(true));
                 }
             })

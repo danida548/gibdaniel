@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normallize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="./js/app.js" type="module" defer></script>
     <title>guifOS! ! !</title>
 </head>
-
 <body>
     <header>
         <div class="barra_superior">
@@ -22,7 +20,7 @@
             <div class="botones">
                 <button class="crear_guifos boton-color">Crear Guifos</button>
                 <div class="selector">
-                    <button class=" elegir botones-selector">Elegir Tema</button>
+                    <button class="elegir botones-selector">Elegir Tema</button>
                     <div class="flecha botones-selector">
                         <img src="/img/dropdown.svg" alt="dropdown">
                     </div>
@@ -41,8 +39,9 @@
             <div class="form">
                 <div class="form__principal">
                      <input type="text" name="buscador" id="search" autocomplete="off"
-                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
-                    <a href="#" class="search__button"> <img src="./img/lupa_inactive.svg" alt="lupa_inactive">Buscar
+                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras..."/>
+                    <a href="#" class="search__button"> 
+                        <img src="./img/lupa_inactive.svg" alt="lupa_inactive"/>Buscar
                     </a>
                 </div>
             </div>
@@ -53,14 +52,14 @@
     <main id="main">
         <section class="sugerencias">
             <div class="titulo">
-                <h3>Hoy Te Sugerimos</h3>
+                <h3>Hoy Te Sugerimos:</h3>
             </div>
             <div class="caja-tarjeta " id="caja_sugerencia">
             </div>
         </section>
         <section class="tendencias">
             <div class="titulo">
-                <h3>Tendencia</h3>
+                <h3>Tendencias:</h3>
             </div>
             <div class="caja-tarjeta">  
             </div>
@@ -73,15 +72,27 @@
             </div>
         </section>
         <section class="guifos">
-            <div id="crear_guifos"></div>
-            <div id="losGuifos"></div>
-            <div class="titulo">
-                <h3>Mis Gifos</h3>
+            <div id="crear_guifos">
+                <div class="crearGuifos light-box">
+                    <header class="header_crear">
+                    </header>
+                    <div class="contenido">
+                    </div>
+                    <footer class = "footer_crear">
+                    </footer>              
+                </div>
             </div>
-            <div class="caja-tarjeta">  
-            </div>
+            <div id="losGuifos">
+                <div class="titulo">
+                <h3>Mis guifos</h3>
+                </div>
+                <div class="caja_tarjeta"></div>
+            </div>   
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/39d8bc6c98.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" type="module"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 </body>
 
 </html>

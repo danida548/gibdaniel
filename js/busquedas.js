@@ -50,7 +50,6 @@ export class BUSQUEDA {
             while(children.length > 0){
                 this.botonesSugerencias.removeChild(this.botonesSugerencias.lastElementChild);
             }
-               
+        }       
     }
-}
 }

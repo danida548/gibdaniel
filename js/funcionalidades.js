@@ -12,9 +12,7 @@ export class FUNCIONES{
     }
 
     botonSelector(){
-    
         this.botonEstilo.firstElementChild.addEventListener('click', () => {
-
             this.estiloBotonSelector();
         });
         this.botonEstilo.firstElementChild.nextElementSibling.addEventListener('click', () =>{
@@ -29,21 +27,24 @@ export class FUNCIONES{
     }
     selectorTemas(){
         this.day.addEventListener('click', () => {
-            console.log('claro');
             document.body.classList.remove('night');
             this.night.classList.remove('tema-seleccionado');
             this.day.classList.add('tema-seleccionado');
             this.logo.src= './img/gifOF_logo.png';
             this.estiloBotonSelector();
+            localStorage.removeItem('night');
         })
         this.night.addEventListener('click', () => {
-            console.log('oscuro');
+           this.nightMode();
+           localStorage.setItem('night', 'night');
+           this.estiloBotonSelector();
+        })
+    }
+        nightMode(){
             document.body.classList.add('night');
             this.night.classList.add('tema-seleccionado');
             this.day.classList.remove('tema-seleccionado');
-            this.logo.src= './img/gifOF_logo_dark.png';
-            this.estiloBotonSelector();
-        })
-
+            this.logo.src='./img/gifOF_logo_dark.png';
     }
+    
 }

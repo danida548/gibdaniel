@@ -74,17 +74,37 @@ section
                 visibility: hidden
                 h5
                     font-size: 1.4rem 
-                    margin-right: 5px
-                    cursor: pointer     
+                    height: 24px
+                    margin-left: 5px
+                    cursor: pointer
+                    z-index: 99     
             .gif
                 height: 290px
                 object-fit: cover
                 object-position: center
                 width: 100%
+            .eliminar
+                position: absolute
+                bottom: 6px
+                left: 150px
+                color: $color-light
+                background: #f7c9f3
+                padding: 10px
+                border: 1px solid $color-light
+                border-radius: 5px 5px 0px 0px
+                box-shadow: 1px 1px 2px 0px $color-light
+                transform-origin: bottom
+                transition: .5s    
             &:hover
                 @extend .light-box
                 .temas_relacionados
-                    visibility: visible    
+                    visibility: visible 
+                .eliminar
+                    transform: scaleY(1)
+                    transition: .2s
+                    &:hover
+                        background: #e0b5dd    
+
         
         
     

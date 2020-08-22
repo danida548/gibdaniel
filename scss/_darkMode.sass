@@ -4,25 +4,28 @@
         .barra_superior
             background: $fondo_degradado_dark
         .cabecera
+            .logo
+                .fa-arrow-left
+                    filter: invert(100)
             .botones
-                .boton-color
+                .boton_color
                     background: #EE3EFE
                     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
                     color: white
                     &:hover
                         background: #cb2fda
                 .selector-active
-                    .botones-selector
-                        background: #cb2fda !important
-                        &::before
-                            border: 1px dotted $color-blanco
+                    .botones_selector
+                            background: #cb2fda !important
+                            &::before
+                                border: 1px dotted $color-blanco
                 .selector
                     &:hover
                         .botones_selector
                             background: #cb2fda
                             &::before
                                 border: 1px dotted $color-blanco
-                    .botones-selector
+                    .botones_selector
                         background: #EE3EFE
                         box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
                         color: white
@@ -41,6 +44,10 @@
                         border: 1px dotted white
                     &::first-letter
                         border-bottom: 1px solid white
+                .mis_guifos-active
+                    color: $color-gris
+                    &::first-letter
+                        border-bottom-color: $color-gris
         .botonesSugerencias
             a
                 background: #2E32FB
@@ -65,7 +72,7 @@
             .titulo
                 border: 1px solid #2E32FB
                 box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038
-            .caja-tarjeta
+            .caja_tarjeta
                 .tarjeta
                     &__encabezado
                         background: $fondo_degradado_dark
@@ -74,4 +81,75 @@
                         border: 1px solid #4C2F99
                 .temas_relacionados
                     background: $fondo_degradado_dark
+                .eliminar
+                    color: $color-blanco
+                    background: #EE3EFE
+                &:hover
+                    .eliminar
+                        &:hover
+                            background: #f15cff !important
+        .guifos
+            #crear_guifos
+                .crearGuifos
+                    .header_crear
+                        .titulo_cuadro
+                            background: $fondo_degradado_dark
+                    .footer_crear
+                        .botones
+                            button
+                                background: #EE3EFE
+                                color: white
+                                border: 1px solid #110038
+                                box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+                                &:first-child
+                                    background: #110038
+                                    border: 1px solid #B4B4B4
+                                    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD
+                                    &:hover
+                                        &::before
+                                            border: 1px dotted $color-blanco
+                .parte2
+                    .contenido
+                        .subiendo
+                            .barraCarga
+                                .span-active
+                                    background: #EE3EFE
+                    .footer_crear
+                        .reproducir
+                            .boton_color
+                                background: #EE3EFE
+                                img
+                                    filter: invert(100)
+                            i
+                                color: white
+                            .barra
+                                span
+                                .span-active
+                                    background: #EE3EFE
+                        .botones_captura
+                            position: relative
+                            display: flex
+                            .rojo
+                                background: #FF6161
+                                color: $color-blanco
+                            button
+                                background: #EE3EFE
+                                color: white
+                                border: 1px solid #110038
+                                box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+                                .captura
+                                    filter: invert(100)
+                .parte_final
+                    .contenido
+                        .derecha
+                            button
+                                background: #f589ff
+                                color: $color-blanco
+                            span
+                                color: $color-blanco
+                                background: #EE3EFE
+                    .footer_crear
+                        .botones
+                            button
+                                background: #EE3EFE !important
                                     
