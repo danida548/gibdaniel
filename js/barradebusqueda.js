@@ -1,7 +1,6 @@
 import { buscarGifs } from "./app.js";
 
 export class BARRADEBUSQUEDA {
-
     constructor(){
         this.botonBuscar = document.querySelector('.search__button');
         this.inputBuscar = document.querySelector('#search');
@@ -17,10 +16,10 @@ export class BARRADEBUSQUEDA {
         
         if(autoCompletado.length == 0) {
           this.cajaAutocompletado.style.display= 'none';  
-          return false;
+          return false;//si no hay datos no pasa nada
         }
     
-        for(const [index, valor] of Object.entries(autoCompletado)){
+        for(const [index, valor] of Object.entries(autoCompletado)){//Se agregan las sugerencias para ser visibles
           if(index > 2) return false;
           const elementoSugerido = document.createElement('div');
           const datoSugerido = valor.name;
@@ -38,7 +37,8 @@ export class BARRADEBUSQUEDA {
         }
         }
         
-
+    
+    
         operarConTeclado(e) {
         let items;
         if(this.cajaAutocompletado.children.length > 0){
@@ -76,8 +76,8 @@ export class BARRADEBUSQUEDA {
         } else if (e.keyCode == 13){
             if(!this.inputBuscar.value) return false;
             this.botonBuscar.classList.remove('boton__seleccionado');
-            buscarGifs.busquedaGifs(this.inputBuscar.value); //cambie mostrarResultadosDeBusqueda por busquedaGuifs
-            this.inputBuscar.value = ''; //verificar
+            buscarGifs.buscarGifs(this.inputBuscar.value);
+            this.inputBuscar.value = '';
             }
         }
         
@@ -85,7 +85,7 @@ export class BARRADEBUSQUEDA {
     
     
         //console.log(autoCompletado);
-    cerrarLista(){ //TODO Al borrar muy rapido no funciona
+    cerrarLista(){ //TODO Al borrar muy rapido no funciona por el tiempo que toma la API
         
         this.cajaAutocompletado.style.display = 'none';
         
@@ -97,11 +97,10 @@ export class BARRADEBUSQUEDA {
         
   
 
-      seleccionar(items){
+      seleccionar(items){ //Seleccionas con el teclado dependiendo de la posicion en el arreglo
         if(!items || this.indexFocus == -1) return false;
         items.forEach(x => {
-            x.classList.remove('autocompletar-active');
-          });
+            x.classList.remove('autocompletar-active');});
         items[this.indexFocus].classList.add('autocompletar-active');
     }
     

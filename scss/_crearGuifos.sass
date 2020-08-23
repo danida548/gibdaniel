@@ -9,6 +9,7 @@
         font-size: 1.4rem
         margin-bottom: 150px
         .header_crear
+            padding: 4px
             .titulo_cuadro
                 color: white
                 background: $fondo_degradado_light
@@ -17,42 +18,42 @@
                 position: absolute
                 top: 45px
                 left: 30px
-            .contenido
-                padding-top: 20px
-                max-width: 518px
-                margin: 0 auto
-                h4
-                    font-size: 1.6rem
-                p
-                    margin: 18px 0px 14px
-                span
-                    font-weight: 800    
-                ul
-                    li
-                        margin: 12px 0px
-            .footer_crear
-                display: flex
-                align-items: center
-                justify-content: flex-end
-                height: 80px
-                .botones
-                    margin-right: 20px
-                    font-size: 16px
-                    button
-                        width: 144px
-                        height: 36px
-                        &:first-child
-                            background: $color-blanco
-                            margin-right: 15px
-                            &:hover
-                                background: #f0e5ee
+        .contenido
+            padding-top: 20px
+            max-width: 518px
+            margin: 0 auto
+            h4
+                font-size: 1.6rem
+            p
+                margin: 18px 0px 14px
+            span
+                font-weight: 800
+            ul
+                li
+                    margin: 12px 0px
+        .footer_crear
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            height: 80px
+            .botones
+                margin-right: 20px
+                font-size: 16px
+                button
+                    width: 144px
+                    height: 36px
+                    &:first-child
+                        background: $blanco
+                        margin-right: 15px
+                        &:hover
+                            background: #F0E5EE
     .parte2
         height: 530px
         width: 860px
         .header_crear
             .icono
                 left: 835px
-                top: 3px
+                top: 5px
         .contenido
             padding-top: 10px
             max-width: 832px
@@ -60,9 +61,9 @@
                 width: 832px
                 height: 424px
                 background: black
-                border: 1px solid #979797  
+                border: 1px solid #979797
                 box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
-                object-fit: cover 
+                object-fit: cover
             .subiendo
                 @extend #video
                 background: #ffffff
@@ -74,10 +75,10 @@
                     width: 48px
                     height: 48px
                     margin-bottom: 10px
-                h5 
+                h5
                     margin-bottom: 20px
                     font-size: 1.4rem
-                .barraCargar
+                .barraCarga
                     width: 240px
                     height: 24px
                     display: flex
@@ -88,14 +89,14 @@
                     span
                         flex: 1
                         border: .5px solid #e7e7e7
-                        width: 10px
-                        border-top: 0px
-                        border-bottom: 0px
+                        width: 12px
+                        border-top: 0
+                        border-bottom: 0
                         height: 20px
                         display: block
                     .span-active
-                        background: #f7c9f3
-                p 
+                        background: #F7C9F3
+                p
                     color: #979797
                     font-size: 1.2rem
                     span
@@ -103,7 +104,7 @@
         .footer_crear
             height: 60px
             .contador
-                background: #ffffff
+                background: #FFFFFF
                 width: 139px
                 border: 1px solid #979797
                 box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
@@ -112,7 +113,7 @@
                 p
                     padding: 7px 32px
             .reproducir
-                position: absolute 
+                position: absolute
                 left: 220px
                 display: flex
                 align-items: center
@@ -120,7 +121,7 @@
                     width: 20px
                     height: 20px
                     margin-right: 5px
-                i 
+                i
                     font-size: 1rem
                 .barra
                     width: 240px
@@ -132,21 +133,21 @@
                     padding: 1px
                     span
                         flex: 1
-                        border: 5px solid #e7e7e7
+                        border: .5px solid #e7e7e7
                         width: 12px
                         border-top: 0
                         border-bottom: 0
                         height: 20px
                         display: block
                     .span-active
-                        background: #f7c9f3
+                        background: #F7C9F3
 
             .botones_captura
-                position: absolute
+                position: relative
                 display: flex
                 .rojo
-                    background: #ff6161
-                    color: $color-blanco
+                    background: #FF6161
+                    color: $blanco
                 button
                     margin: 0
                     height: 36px
@@ -164,13 +165,13 @@
         .contenido
             margin-top: 30px
             display: flex
-            max-width: 95px
+            max-width: 95%
             .izquierda
                 max-width: 365px
                 max-height: 191px
                 overflow: hidden
                 object-fit: cover
-                background: #e6e6e6
+                background: #E6E6E6
                 box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF
                 img
                     width: 98%
@@ -182,23 +183,23 @@
                 margin: 27px
                 align-items: flex-start
                 position: relative
-                span 
+                span
                     position: absolute
                     top: 12px
                     right: 0px
-                    background: #f7c9f3
+                    background: #F7C9F3
                     color: $color-light
                     padding: 5px
                     border-radius: 4px
                     box-shadow: 1px 1px 2px 0px black
                     font-weight: 500
-                    display: none   
+                    display: none
                 button
                     margin-top: 20px
                     width: 256px
                     height: 36px
                     font-size: 1.6rem
-                    background: #fff4fd
+                    background: #FFF4FD
                     border: 1px solid #110038
                     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF
                     &:hover
@@ -207,8 +208,7 @@
             margin-top: 40px
             .botones
                 button
-                    background: #f7c9f3 !important                       
-
+                    background: #F7C9F3 !important
                                                                            
 
 

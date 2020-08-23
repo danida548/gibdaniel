@@ -1,9 +1,9 @@
-import {apiGifs} from "./app.js";
+import { apiGifs } from "./app.js"
 
 export class MISGUIFOS{
     constructor(){
         this.misGuifos = document.querySelector('#losGuifos');
-        this.misGuifos
+        this.misGuifos;
         this.init();
     }
     init(){

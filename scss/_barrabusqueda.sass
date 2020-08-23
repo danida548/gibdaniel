@@ -2,7 +2,7 @@
 
 .buscador
     padding: 3px
-    margin-top: 30px    
+    margin-top: 30px
     &__titulo
         background: $fondo_degradado_light
         label
@@ -11,27 +11,26 @@
             height: 24px
             line-height: 24px
             padding-left: 6px
-    .form
+    .form 
         padding: 12px 15px
         &__principal
             #search
                 width: 90%
                 height: 48px
                 line-height: 48px
-                outline: none
-                @extend .light-box-superior
+                @extend .light-box
                 border: 1px solid #979797
                 padding-left: 16px
-                background: $color-blanco !important  
+                background: $blanco !important
                 &::placeholder
-                    color: $color-gris
+                    color: $gris
                     font-size: 1.6rem
             .search__button
-                padding: 10px 10px 8px 10px  
+                padding: 10px 10px 8px 10px
                 line-height: 36px
-                margin-left: 8px 
+                margin-left: 8px
                 white-space: nowrap
-                color: $color-gris 
+                color: $gris
                 border: 1px solid #808080
                 @extend .light-box
                 img
@@ -42,26 +41,26 @@
                 background: #f7c9f3 !important
                 color: $color-light
                 img
-                    filter: invert(200%)    
-            .boton_seleccionado
+                    filter: invert(200%)
+            .boton__seleccionado
                 background: #e0b5dd !important
                 position: relative
                 &::before
                     content: ''
-                    position: absolute 
+                    position: absolute
                     border: 1px dotted $color-light
                     top: 2px
                     left: 2px
                     right: 3px
-                    bottom: 2px  
+                    bottom: 2px
 .autocompletado
-    position: absolute  
+    position: absolute
     z-index: 99
     left: 100px
     right: 100px
     padding: 17px 16px
     display: none
-    max-height: 202px
+    max-height: 155px
     min-height: 40px
     overflow: hidden
     .autocompletar-active
@@ -76,22 +75,22 @@
             right: 2px
             bottom: 2px
     div
-        border: 1px solid #808080 
+        border: 1px solid #808080
         margin-bottom: 10px
-        @extend .light-box 
+        @extend .light-box
         background: #f0f0f0
         height: 36px
-        width: 89%   
+        width: 89%
         &:last-child
             margin-bottom: 0px
         &:hover
-            @extend .autocompletar-active    
+            @extend .autocompletar-active
         strong
             color: #110038
             font-size: 1.6rem
             line-height: 36px
             margin-left: 15px
-            font-weight: 400    
+            font-weight: 400
 .botonesSugerencias
     margin-top: 24px
     a
@@ -103,7 +102,3 @@
         font-size: 14px
         line-height: 16px
         cursor: pointer
-
-
-                          
-

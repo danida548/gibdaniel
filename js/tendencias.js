@@ -1,24 +1,23 @@
-import {apiGifs, uiGifs} from "./app.js";
+import { apiGifs, uiGifs } from "./app.js"
 
-export class TENDENCIAS {
-    constructor() {
+export class TENDENCIAS{
+    constructor(){
         this.tendencias = document.querySelector('.tendencias');
         this.init();
     }
-    init() {
-        this.mostrarTendencias();
+    init(){
+        this.mostrarTendencias()
     }
-    mostrarTendencias() {
-        
+    mostrarTendencias(){
+
         const elementoPadre = this.tendencias.lastElementChild;
-        apiGifs.tendenciaGifs()
+        apiGifs.tendenciasGifs()
             .then(tendencia => {
 
                 const data = tendencia.data;
 
                 uiGifs.crearElementos(data, elementoPadre);
-                
+
             });
     }
-
 }

@@ -1,84 +1,79 @@
-import {API} from "./api.js";
-import {TENDENCIAS} from "./tendencias.js";
-import {UI} from "./interfaz.js";
-import {BUSQUEDA} from "./busquedas.js";
-import {BARRADEBUSQUEDA} from "./barradebusqueda.js";
-import {SUGERENCIAS} from "./sugerencias.js";
-import {FUNCIONES} from "./funcionalidades.js";
-import {CREARGUIFOS} from "./crearguifos.js";
-import {RECORDER} from "./recorder.js";
-import {CRONOMETRO} from "./cronometro.js";
-import {MISGUIFOS} from "./misguifos.js";
+import { API } from "./api.js";
+import { TENDENCIAS } from "./tendencias.js"
+import { UI } from "./interfaz.js"
+import { BUSCADOR } from "./busquedas.js"
+import { BARRADEBUSQUEDA } from "./barradebusqueda.js"
+import { SUGERENCIAS } from "./sugerencias.js"
+import { FUNCIONES } from "./funcionalidades.js";
+import { CREARGUIFOS } from "./crearguifos.js";
+import { RECORDER } from "./recorder.js";
+import { CRONOMETRO } from "./cronometro.js";
+import { MISGUIFOS } from "./misguifos.js";
 
-
-//tiene todos los datos de la API
-export const apiGifs = new API('9irbiK8l658g0xVfQOoCAh6M94vBGIGr');
-//creacion de elemento
+//Tiene todos los datos de la API
+export const apiGifs = new API('fcWFPFFk27X7eYpihoAfbcqXbQSWkSTj');
+//Creacion de elementos
 export const uiGifs = new UI();
-//buscar gifs
-export const buscarGifs = new BUSQUEDA();
-//lo necesario para grabar
+//Buscar gifs
+export const buscarGifs = new BUSCADOR();
+//Lo necesario para grabar
 export const recorder = new RECORDER();
-//cronometro
+//Cronometro
 export const cronometro = new CRONOMETRO();
-//logica seccion tendencia
+//Logica seccion tendencias
 const tendenciasGifs = new TENDENCIAS();
-//funcion Input
+//Funcion del input
 const barraDeBusqueda = new BARRADEBUSQUEDA();
-//seccion sugerencias
+//Seccion Sugeridos
 const sugerenciasGifs = new SUGERENCIAS();
-//funcionalidades extras
+//Funcionalidades extras
 const funcionalidades = new FUNCIONES();
-//seccion mis guifos
-const crearGuifs = new CREARGUIFOS();
-//seccion mis guifos
-export const misGuifos = new MISGUIFOS();
+//Seccion CrearGuifos
+const crearGuifos = new CREARGUIFOS();
+//Seccion misGuifos
+export const misGuifos = new MISGUIFOS(); 
 
 const main = document.querySelector('#main');
 const header = document.body.firstElementChild;
 
-if(localStorage.getItem('night')){//si el tema era el oscuro se guarda en locaStorage y se ponen los estilos
+if(localStorage.getItem('night')) { //Si el tema era el oscuro se guarda en el local Storage y se ponen los estilos
     funcionalidades.nightMode();
 }
-//dectectar click en sugerencias y cierre de ventana
-main.addEventListener('click', (e) =>{
-    if(e.target.className === 'texto')buscarGifs.buscarAlDarClick(e.target);
-    if(e.target.className === 'tarjeta__cerrar')sugerenciasGifs.botonCerrar(e.target);  
+//Detectar clicks en sugerencias y cierre de ventana
+main.addEventListener('click', (e) => {
+    if(e.target.className === 'texto') buscarGifs.buscarAlDarClick(e.target); //Al dar a los titulos empieza la busqueda
+    if(e.target.className === 'tarjeta__cerrar') sugerenciasGifs.botonCerrar(e.target);//Cierra el recuadro de sugerencia y solicita otro
 });
+//Detectar clicks en los botones abajo del input de texto
+header.addEventListener('click', (e) => {
+    if(e.target.className === 'boton_sugerencia') buscarGifs.buscarAlDarClick(e.target);
+})
 
-//detectar click en los botones abajo del input de texto
-header.addEventListener('click', (e)=>{
-    if(e.target.className === 'boton_sugerencia')buscarGifs.buscarAlDarClick(e.target);
-});
-
-//regresar al inicio al dar click al logo
+//Regresar al inicio al dar click al logo
 document.querySelector('.logo').addEventListener('click', () => {
-  location.reload();
+    location.reload();
 });
-
-// funcion del boton buscar
-barraDeBusqueda.botonBuscar.addEventListener('click',() => {
-    if (!barraDeBusqueda.inputBuscar.value) return false;
-        barraDeBusqueda.cerrarLista();
-        barraDeBusqueda.botonBuscar.classList.remove('boton__seleccionado');
-        buscarGifs.busquedaGifs(barraDeBusqueda.inputBuscar.value);
+//Funciones del boton buscar
+barraDeBusqueda.botonBuscar.addEventListener('click', () => {
+    if(!barraDeBusqueda.inputBuscar.value) return false;
+    barraDeBusqueda.cerrarLista();
+    barraDeBusqueda.botonBuscar.classList.remove('boton__seleccionado');
+    buscarGifs.buscarGifs(barraDeBusqueda.inputBuscar.value);
 });
-
-//mostrar sugerencias abajo del input
+//Mostrar sugerencias abajo del input
 barraDeBusqueda.inputBuscar.addEventListener('input', () => {
     const datoaBuscar = barraDeBusqueda.inputBuscar.value;
 
     barraDeBusqueda.cerrarLista();
-    if (!datoaBuscar) {
+    if(!datoaBuscar){
         barraDeBusqueda.botonBuscar.classList.remove('search_button_active');
         barraDeBusqueda.botonBuscar.classList.remove('boton__seleccionado');
         return false;
     }
-
     barraDeBusqueda.botonBuscar.classList.add('search_button_active');
 
     apiGifs.autoCompletado(datoaBuscar.trimStart())
-        .then(datos => barraDeBusqueda.autoCompletar(datos));
-});
+        .then(datos => barraDeBusqueda.autoCompletar(datos))
+})
 
 barraDeBusqueda.inputBuscar.addEventListener('keydown', (e) => barraDeBusqueda.operarConTeclado(e));

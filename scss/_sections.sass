@@ -1,11 +1,10 @@
 @import _generales
-
 .guifos
     display: none
 .busqueda
     display: none
 section
-    margin: 66px 
+    margin-top: 66px
     padding-bottom: 20px
     .titulo
         background: white
@@ -18,14 +17,14 @@ section
             color: $color-light
             font-size: 1.4rem
             font-weight: 400
-            margin-left: 7px 
-    .caja-tarjeta
+            margin-left: 7px
+    .caja_tarjeta
         display: grid
         grid-template-columns: repeat(4, 1fr)
         grid-gap: 20px
         grid-auto-flow: row dense
         .grande
-            grid-column-end: span 2       
+            grid-column-end: span 2
         .tarjeta
             display: flex
             flex-direction: column
@@ -33,18 +32,18 @@ section
             padding: 3px 3px 5px 3px
             position: relative
             &__encabezado
-                background: $fondo_degradado_light
                 display: flex
                 align-items: center
                 justify-content: space-between
+                background: $fondo_degradado_light
                 height: 24px
                 margin-bottom: 3px
                 padding: 0px 7px
                 h5
                     font-size: 1.4rem
             .ver_mas
-                background: #4180f6
-                border: 1px solid #4c2f99
+                background: #4180F6
+                border: 1px solid #4C2F99
                 bottom: 15px
                 box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF
                 color: white
@@ -70,14 +69,15 @@ section
                 position: absolute
                 bottom: 3px
                 height: 24px
-                width: 98.5%
+                left: 2px
+                right: 3px
                 visibility: hidden
                 h5
-                    font-size: 1.4rem 
+                    font-size: 1.4rem
                     height: 24px
-                    margin-left: 5px
+                    margin-left: 10px
                     cursor: pointer
-                    z-index: 99     
+                    z-index: 99
             .gif
                 height: 290px
                 object-fit: cover
@@ -88,23 +88,23 @@ section
                 bottom: 6px
                 left: 150px
                 color: $color-light
-                background: #f7c9f3
+                background: #F7C9F3
                 padding: 10px
                 border: 1px solid $color-light
                 border-radius: 5px 5px 0px 0px
                 box-shadow: 1px 1px 2px 0px $color-light
+                transform: scaleY(0)
                 transform-origin: bottom
-                transition: .5s    
+                transition: .5s
             &:hover
                 @extend .light-box
                 .temas_relacionados
-                    visibility: visible 
+                    visibility: visible
                 .eliminar
                     transform: scaleY(1)
                     transition: .2s
                     &:hover
-                        background: #e0b5dd    
-
+                        background: #e0b5dd
         
         
     

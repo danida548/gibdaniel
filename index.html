@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normallize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>guifOS! ! !</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gifs</title>
 </head>
 <body>
     <header>
@@ -15,61 +14,66 @@
         </div>
         <div class="cabecera">
             <div class="logo">
-                <img src="/img/gifOF_logo.png" alt="logo">
+                <i class="fas fa-arrow-left"></i>
+                <img src="./img/gifOF_logo.png" alt="logo">
             </div>
             <div class="botones">
-                <button class="crear_guifos boton-color">Crear Guifos</button>
+                <button class="crear_guifos boton_color">
+                    Crear Guifos
+                </button>
                 <div class="selector">
-                    <button class="elegir botones-selector">Elegir Tema</button>
-                    <div class="flecha botones-selector">
-                        <img src="/img/dropdown.svg" alt="dropdown">
+                    <button class="elegir botones_selector">
+                        Elegir Tema
+                    </button>
+                    <div class="flecha botones_selector">
+                        <img src="./img/dropdown.svg" alt="">
                     </div>
                     <div class="temas">
                         <button class="tema tema-seleccionado" id="day">Sailor Day</button>
                         <button class="tema" id="night">Sailor Night</button>
                     </div>
                 </div>
-                <button class="mis_guifos">Mis GuifOS</button>
+                <button class="mis_guifos">Mis Guifos</button>
             </div>
         </div>
         <div class="buscador light-box">
-            <div class="buscador__titulo"> 
-                <label for="buscador">Buscar</label> 
+            <div class="buscador__titulo">
+                <label>Buscar</label>
             </div>
             <div class="form">
                 <div class="form__principal">
-                     <input type="text" name="buscador" id="search" autocomplete="off"
-                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras..."/>
-                    <a href="#" class="search__button"> 
-                        <img src="./img/lupa_inactive.svg" alt="lupa_inactive"/>Buscar
+                     <input type="text" name="buscador" id="search" autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                     <a href="#" class="search__button">
+                         <img src="./img/lupa_inactive.svg" alt="">Buscar
                     </a>
                 </div>
             </div>
         </div>
-        <div class="autocompletado light-box" id="autocompletado"> </div>
-        <div class="botonesSugerencias"> </div>
+        <div class="autocompletado light-box" id="autocompletado">
+        </div>
+        <div class="botonesSugerencias">
+        </div>
     </header>
     <main id="main">
         <section class="sugerencias">
             <div class="titulo">
-                <h3>Hoy Te Sugerimos:</h3>
+                <h3>Hoy te sugerimos:</h3>
             </div>
-            <div class="caja-tarjeta " id="caja_sugerencia">
+            <div class="caja_tarjeta" id="caja_sugerencia"> 
             </div>
         </section>
         <section class="tendencias">
             <div class="titulo">
                 <h3>Tendencias:</h3>
             </div>
-            <div class="caja-tarjeta">  
-            </div>
+           <div class="caja_tarjeta">
+           </div>
         </section>
         <section class="busqueda">
             <div class="titulo">
-                <h3 id="titulo-de-busqueda">busqueda</h3>
+                <h3 id="titulo_de_busqueda">Busquedas</h3>
             </div>
-            <div class="caja-tarjeta" id="resultados">  
-            </div>
+            <div class="caja_tarjeta" id="resultados"></div>
         </section>
         <section class="guifos">
             <div id="crear_guifos">
@@ -79,7 +83,8 @@
                     <div class="contenido">
                     </div>
                     <footer class = "footer_crear">
-                    </footer>              
+                    </footer>
+                    
                 </div>
             </div>
             <div id="losGuifos">
@@ -94,5 +99,4 @@
     <script src="./js/app.js" type="module"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 </body>
-
 </html>
