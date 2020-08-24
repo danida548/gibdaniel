@@ -17,8 +17,8 @@ html {
 
 body {
   background: #FFF4FD;
-  font-size: 16px;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 100px;
   font-family: "Chakra Petch", sans-serif;
@@ -82,8 +82,8 @@ html {
 
 body {
   background: #FFF4FD;
-  font-size: 16px;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 100px;
   font-family: "Chakra Petch", sans-serif;
@@ -135,7 +135,7 @@ ul {
 
 header .barra_superior {
   background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  box-shadow: 0 1px 0px 0px #110038;
+  box-shadow: 0px 1px 0px 0px #110038;
   height: 23px;
   line-height: 23px;
   position: absolute;
@@ -146,6 +146,7 @@ header .barra_superior {
 }
 header .barra_superior h3 {
   font-size: 1.2rem;
+  font-size: 12px;
   font-weight: regular;
   margin-left: 7px;
   color: #ffffff;
@@ -164,6 +165,7 @@ header .cabecera .logo {
 header .cabecera .logo .fa-arrow-left {
   margin-right: 5px;
   font-size: 3rem;
+  font-size: 30px;
   color: black;
   display: none;
 }
@@ -241,7 +243,7 @@ header .cabecera .botones .selector button {
   padding: 10px 24px;
 }
 header .cabecera .botones .selector .flecha {
-  padding: 3.5px 16px 8.5px;
+  padding: 7px 16px 6px;
   border-left: none;
 }
 header .cabecera .botones .selector .flecha img {
@@ -313,8 +315,8 @@ html {
 
 body {
   background: #FFF4FD;
-  font-size: 16px;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 100px;
   font-family: "Chakra Petch", sans-serif;
@@ -374,6 +376,7 @@ ul {
 .buscador__titulo label {
   display: block;
   font-size: 1.4rem;
+  font-size: 14px;
   height: 24px;
   line-height: 24px;
   padding-left: 6px;
@@ -392,6 +395,7 @@ ul {
 .buscador .form__principal #search::placeholder {
   color: #b4b4b4;
   font-size: 1.6rem;
+  font-size: 16px;
 }
 .buscador .form__principal .search__button {
   padding: 10px 10px 8px 10px;
@@ -464,6 +468,7 @@ ul {
 .autocompletado div strong {
   color: #110038;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 36px;
   margin-left: 15px;
   font-weight: 400;
@@ -497,8 +502,8 @@ html {
 
 body {
   background: #FFF4FD;
-  font-size: 16px;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 100px;
   font-family: "Chakra Petch", sans-serif;
@@ -571,6 +576,7 @@ section .titulo {
 section .titulo h3 {
   color: #110038;
   font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 400;
   margin-left: 7px;
 }
@@ -601,6 +607,7 @@ section .caja_tarjeta .tarjeta__encabezado {
 }
 section .caja_tarjeta .tarjeta__encabezado h5 {
   font-size: 1.4rem;
+  font-size: 14px;
 }
 section .caja_tarjeta .tarjeta .ver_mas {
   background: #4180F6;
@@ -637,6 +644,7 @@ section .caja_tarjeta .tarjeta .temas_relacionados {
 }
 section .caja_tarjeta .tarjeta .temas_relacionados h5 {
   font-size: 1.4rem;
+  font-size: 14px;
   height: 24px;
   margin-left: 10px;
   cursor: pointer;
@@ -848,8 +856,8 @@ html {
 
 body {
   background: #FFF4FD;
-  font-size: 16px;
   font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 100px;
   font-family: "Chakra Petch", sans-serif;
@@ -907,7 +915,7 @@ ul {
   margin: 0 auto;
   height: 386px;
   width: 684px;
-  font-size: 1.4rem;
+  font-size: 14px;
   margin-bottom: 150px;
 }
 #crear_guifos .crearGuifos .header_crear {
@@ -930,6 +938,7 @@ ul {
 }
 #crear_guifos .crearGuifos .contenido h4 {
   font-size: 1.6rem;
+  font-size: 16px;
 }
 #crear_guifos .crearGuifos .contenido p {
   margin: 18px 0px 14px;
@@ -996,6 +1005,7 @@ ul {
 #crear_guifos .parte2 .contenido .subiendo h5 {
   margin-bottom: 20px;
   font-size: 1.4rem;
+  font-size-font-size: 14px;
 }
 #crear_guifos .parte2 .contenido .subiendo .barraCarga {
   width: 240px;
@@ -1021,6 +1031,7 @@ ul {
 #crear_guifos .parte2 .contenido .subiendo p {
   color: #979797;
   font-size: 1.2rem;
+  font-size: 12px;
 }
 #crear_guifos .parte2 .contenido .subiendo p span {
   text-decoration: line-through;
@@ -1046,12 +1057,13 @@ ul {
   align-items: center;
 }
 #crear_guifos .parte2 .footer_crear .reproducir button {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-right: 5px;
 }
 #crear_guifos .parte2 .footer_crear .reproducir i {
   font-size: 1rem;
+  font-size: 10px;
 }
 #crear_guifos .parte2 .footer_crear .reproducir .barra {
   width: 240px;
@@ -1141,6 +1153,7 @@ ul {
   width: 256px;
   height: 36px;
   font-size: 1.6rem;
+  font-size: 16px;
   background: #FFF4FD;
   border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;

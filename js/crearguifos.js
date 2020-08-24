@@ -94,7 +94,7 @@ export class  CREARGUIFOS{
                                       </div>
                                       <div class="icono">
                                             <img src="./img/window_img.png" alt="">
-                                      </div>`
+                                      </div>`;
         this.contenidoCrear.innerHTML = `<h4>Aquí podras crear tus propios guifos</h4><p>Crear tu <span>guifo</span> es muy facil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
                                         <ul>
                                             <li><span>1) </span>Dar permiso de acceso a la cámara (sólo por el tiempo de uso)</li>
@@ -102,11 +102,11 @@ export class  CREARGUIFOS{
                                             <li><span>3) </span>Revisar el momento</li>
                                             <li><span>4) </span>Listo para subir y compartir!</li>
                                             <li>¿Quieres comenzar a crear tu <span>guifo</span> ahora?</li>
-                                        </ul>`
+                                        </ul>`;
         this.footerCrear.innerHTML = `<div class="botones">
                                         <button class="boton_color" id="cancelar">Cancelar</button>
                                         <button class="boton_color" id="comenzar">Comenzar</button>
-                                      </div>`
+                                      </div>`;
     }
     parte2(){
         this.ocultarMostrar(this.misGuifos, 'none');
@@ -116,7 +116,7 @@ export class  CREARGUIFOS{
                                     </div>
                                     <div class="icono">
                                         <img src="./img/button3.svg" alt="cerrar" id="cerrarCreador">
-                                    </div>`
+                                    </div>`;
         this.contenidoCrear.innerHTML = `<video src="stream" id="video"></video>`;
         this.footerCrear.innerHTML = `<div class="botones_captura">
                                         <button class="boton_color" id="capturar">
@@ -134,7 +134,7 @@ export class  CREARGUIFOS{
                                     </div>
                                     <div class="icono">
                                         <img src="./img/button3.svg" alt="cerrar" id="cerrarCreador">
-                                    </div>`
+                                    </div>`;
         this.footerCrear.innerHTML = `<div class="contador">
                                          <p class="cronometro">00:00:00</p>
                                       </div>
@@ -153,7 +153,7 @@ export class  CREARGUIFOS{
         this.video = video;
         this.headerCrear.innerHTML= `<div class="titulo_cuadro">
                                         <h4>Vista Previa</h4>
-                                    </div>`
+                                    </div>`;
         this.contenidoCrear.innerHTML = '';
         this.contenidoCrear.appendChild(video)
         this.footerCrear.innerHTML = `<div class="contador">
@@ -168,7 +168,7 @@ export class  CREARGUIFOS{
                                             Repetir Guifo
                                         </button>
                                         <button class="boton_color" id="subir">Subir Guifo</button>
-                                     </div>`
+                                     </div>`;
         this.play = document.querySelector('#play');
         
     }
@@ -212,12 +212,12 @@ export class  CREARGUIFOS{
                                                 <button id="copiar">Copiar Enlace Guifo</button>
                                                 <span id="copiado"></span>
                                                 <button id="descargar">Descargar Guifo</button>
-                                        </div>`
+                                        </div>`;
         this.footerCrear.innerHTML= `<div class="botones">
                                         <button class="boton_color" id="terminado">
                                             Listo
                                         </button>
-                                    </div>`
+                                    </div>`;
                                 
     }
     cerrarCrearGuifos(){ //Reset a 0
