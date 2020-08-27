@@ -12,6 +12,7 @@ export class  CREARGUIFOS{
         this.contenidoCrear = document.querySelector('.contenido');
         this.footerCrear = document.querySelector('.footer_crear');
         this.flecha = document.querySelector('.fa-arrow-left');
+        this.autoCompletado = document.querySelector('#autocompletado');
         this.play;
         this.video;
         this.id;
@@ -30,6 +31,7 @@ export class  CREARGUIFOS{
             this.ocultarMostrar(this.flecha, 'block');
             this.ocultarMostrar(this.buscador, 'none');
             this.ocultarMostrar(this.botones, 'none');
+            this.ocultarMostrar(this.autoCompletado, 'none'); //correcion de error 
             uiGifs.mostrarSeccion('guifos');
             this.primeraParte();
             buscarGifs.eliminarBotonesSugerencias();
